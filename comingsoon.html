@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYA</title>
+    <!-- <link rel="shortcut icon" href="assets/images/logo.png"> -->
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css" />
+    <link href="assets/lib/animate/aos.css" rel="stylesheet">
+    <!---En--->
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <!-- Ar --->
+    <!-- <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.rtl.min.css"> -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- <link rel="stylesheet" href="assets/css/indexAr.css"> -->
+</head>
+
+<body>
+    <header class="d-flex align-items-center sticky-top h-navbar ">
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
+                <a class="navbar-brand me-lg-5" href="#"><img src="assets/images/logo.png" class="img-fluid"></a>
+                <div class="d-flex">
+                    <div class=" d-flex d-lg-none align-items-center">
+                        <a class="nav-link mx-2" href="#">
+                            <svg class="mx-lg-2" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.6133 21.0119L19.08 16.7921C20.5427 15.0525 21.3363 12.9042 21.3333 10.6927C21.3333 8.72309 20.7077 6.79776 19.5357 5.16013C18.3636 3.5225 16.6977 2.24613 14.7486 1.49241C12.7996 0.73869 10.6548 0.541483 8.58571 0.925725C6.51658 1.30997 4.61596 2.2584 3.1242 3.65109C1.63244 5.04378 0.616538 6.81817 0.204962 8.74989C-0.206614 10.6816 0.00462166 12.6839 0.811956 14.5035C1.61929 16.3232 2.98646 17.8784 4.74059 18.9727C6.49471 20.0669 8.557 20.6509 10.6667 20.6509C13.0355 20.6537 15.3366 19.9128 17.2 18.5472L21.72 22.7795C21.844 22.8962 21.9914 22.9888 22.1539 23.052C22.3164 23.1152 22.4907 23.1477 22.6667 23.1477C22.8427 23.1477 23.017 23.1152 23.1794 23.052C23.3419 22.9888 23.4894 22.8962 23.6133 22.7795C23.7383 22.6638 23.8375 22.5261 23.9052 22.3744C23.9729 22.2227 24.0077 22.06 24.0077 21.8957C24.0077 21.7314 23.9729 21.5687 23.9052 21.417C23.8375 21.2653 23.7383 21.1276 23.6133 21.0119ZM2.66667 10.6927C2.66667 9.21548 3.13586 7.77149 4.01491 6.54326C4.89397 5.31504 6.1434 4.35776 7.6052 3.79247C9.06701 3.22718 10.6755 3.07928 12.2274 3.36746C13.7792 3.65564 15.2047 4.36696 16.3235 5.41148C17.4423 6.456 18.2043 7.78679 18.513 9.23558C18.8216 10.6844 18.6632 12.1861 18.0577 13.5508C17.4522 14.9155 16.4268 16.082 15.1112 16.9027C13.7956 17.7233 12.2489 18.1614 10.6667 18.1614C8.54494 18.1614 6.51011 17.3745 5.00982 15.9738C3.50953 14.5732 2.66667 12.6735 2.66667 10.6927Z"
+                                    fill="#424241" />
+                            </svg>
+                        </a>
+                        <a class="nav-link mx-2" href="#">
+                            <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.333 6.71367H16.333V5.46888C16.333 4.14833 15.7711 2.88187 14.7709 1.9481C13.7707 1.01433 12.4142 0.489746 10.9997 0.489746C9.58519 0.489746 8.22863 1.01433 7.22844 1.9481C6.22824 2.88187 5.66634 4.14833 5.66634 5.46888V6.71367H1.66634C1.31272 6.71367 0.973581 6.84481 0.723532 7.07826C0.473484 7.3117 0.333008 7.62831 0.333008 7.95845L0.333008 21.6511C0.333008 22.6415 0.754435 23.5913 1.50458 24.2917C2.25473 24.992 3.27214 25.3854 4.33301 25.3854H17.6663C18.7272 25.3854 19.7446 24.992 20.4948 24.2917C21.2449 23.5913 21.6663 22.6415 21.6663 21.6511V7.95845C21.6663 7.62831 21.5259 7.3117 21.2758 7.07826C21.0258 6.84481 20.6866 6.71367 20.333 6.71367ZM8.33301 5.46888C8.33301 4.80861 8.61396 4.17538 9.11406 3.70849C9.61415 3.24161 10.2924 2.97931 10.9997 2.97931C11.7069 2.97931 12.3852 3.24161 12.8853 3.70849C13.3854 4.17538 13.6663 4.80861 13.6663 5.46888V6.71367L8.33301 6.71367V5.46888ZM18.9997 21.6511C18.9997 21.9812 18.8592 22.2978 18.6092 22.5313C18.3591 22.7647 18.02 22.8959 17.6663 22.8959H4.33301C3.97939 22.8959 3.64025 22.7647 3.3902 22.5313C3.14015 22.2978 2.99967 21.9812 2.99967 21.6511L2.99967 9.20323H5.66634V10.448C5.66634 10.7782 5.80682 11.0948 6.05687 11.3282C6.30691 11.5617 6.64605 11.6928 6.99967 11.6928C7.3533 11.6928 7.69243 11.5617 7.94248 11.3282C8.19253 11.0948 8.33301 10.7782 8.33301 10.448V9.20323H13.6663V10.448C13.6663 10.7782 13.8068 11.0948 14.0569 11.3282C14.3069 11.5617 14.6461 11.6928 14.9997 11.6928C15.3533 11.6928 15.6924 11.5617 15.9425 11.3282C16.1925 11.0948 16.333 10.7782 16.333 10.448V9.20323L18.9997 9.20323V21.6511Z"
+                                    fill="#424241" />
+                            </svg>
+                        </a>
+                        <a class="nav-link mx-2 fs-5" style="color:#424241;" href="#">
+                            <i class="fa-solid fa-globe"></i>
+                            ar
+                        </a>
+                    </div>
+                    <button class="navbar-toggler border-0 shadow-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="d-flex flex-lg-row justify-content-lg-between align-items-center offcanvas offcanvas-end w-75"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skin Care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Hair Care </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Body Care </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Foot Care </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Supplements</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-flex align-items-center ">
+                            <a class="nav-link1 mx-3" href="#">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.6133 21.0119L19.08 16.7921C20.5427 15.0525 21.3363 12.9042 21.3333 10.6927C21.3333 8.72309 20.7077 6.79776 19.5357 5.16013C18.3636 3.5225 16.6977 2.24613 14.7486 1.49241C12.7996 0.73869 10.6548 0.541483 8.58571 0.925725C6.51658 1.30997 4.61596 2.2584 3.1242 3.65109C1.63244 5.04378 0.616538 6.81817 0.204962 8.74989C-0.206614 10.6816 0.00462166 12.6839 0.811956 14.5035C1.61929 16.3232 2.98646 17.8784 4.74059 18.9727C6.49471 20.0669 8.557 20.6509 10.6667 20.6509C13.0355 20.6537 15.3366 19.9128 17.2 18.5472L21.72 22.7795C21.844 22.8962 21.9914 22.9888 22.1539 23.052C22.3164 23.1152 22.4907 23.1477 22.6667 23.1477C22.8427 23.1477 23.017 23.1152 23.1794 23.052C23.3419 22.9888 23.4894 22.8962 23.6133 22.7795C23.7383 22.6638 23.8375 22.5261 23.9052 22.3744C23.9729 22.2227 24.0077 22.06 24.0077 21.8957C24.0077 21.7314 23.9729 21.5687 23.9052 21.417C23.8375 21.2653 23.7383 21.1276 23.6133 21.0119ZM2.66667 10.6927C2.66667 9.21548 3.13586 7.77149 4.01491 6.54326C4.89397 5.31504 6.1434 4.35776 7.6052 3.79247C9.06701 3.22718 10.6755 3.07928 12.2274 3.36746C13.7792 3.65564 15.2047 4.36696 16.3235 5.41148C17.4423 6.456 18.2043 7.78679 18.513 9.23558C18.8216 10.6844 18.6632 12.1861 18.0577 13.5508C17.4522 14.9155 16.4268 16.082 15.1112 16.9027C13.7956 17.7233 12.2489 18.1614 10.6667 18.1614C8.54494 18.1614 6.51011 17.3745 5.00982 15.9738C3.50953 14.5732 2.66667 12.6735 2.66667 10.6927Z"
+                                        fill="#424241" />
+                                </svg>
+                            </a>
+                            <a class="nav-link1 mx-3" href="#">
+                                <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.333 6.71367H16.333V5.46888C16.333 4.14833 15.7711 2.88187 14.7709 1.9481C13.7707 1.01433 12.4142 0.489746 10.9997 0.489746C9.58519 0.489746 8.22863 1.01433 7.22844 1.9481C6.22824 2.88187 5.66634 4.14833 5.66634 5.46888V6.71367H1.66634C1.31272 6.71367 0.973581 6.84481 0.723532 7.07826C0.473484 7.3117 0.333008 7.62831 0.333008 7.95845L0.333008 21.6511C0.333008 22.6415 0.754435 23.5913 1.50458 24.2917C2.25473 24.992 3.27214 25.3854 4.33301 25.3854H17.6663C18.7272 25.3854 19.7446 24.992 20.4948 24.2917C21.2449 23.5913 21.6663 22.6415 21.6663 21.6511V7.95845C21.6663 7.62831 21.5259 7.3117 21.2758 7.07826C21.0258 6.84481 20.6866 6.71367 20.333 6.71367ZM8.33301 5.46888C8.33301 4.80861 8.61396 4.17538 9.11406 3.70849C9.61415 3.24161 10.2924 2.97931 10.9997 2.97931C11.7069 2.97931 12.3852 3.24161 12.8853 3.70849C13.3854 4.17538 13.6663 4.80861 13.6663 5.46888V6.71367L8.33301 6.71367V5.46888ZM18.9997 21.6511C18.9997 21.9812 18.8592 22.2978 18.6092 22.5313C18.3591 22.7647 18.02 22.8959 17.6663 22.8959H4.33301C3.97939 22.8959 3.64025 22.7647 3.3902 22.5313C3.14015 22.2978 2.99967 21.9812 2.99967 21.6511L2.99967 9.20323H5.66634V10.448C5.66634 10.7782 5.80682 11.0948 6.05687 11.3282C6.30691 11.5617 6.64605 11.6928 6.99967 11.6928C7.3533 11.6928 7.69243 11.5617 7.94248 11.3282C8.19253 11.0948 8.33301 10.7782 8.33301 10.448V9.20323H13.6663V10.448C13.6663 10.7782 13.8068 11.0948 14.0569 11.3282C14.3069 11.5617 14.6461 11.6928 14.9997 11.6928C15.3533 11.6928 15.6924 11.5617 15.9425 11.3282C16.1925 11.0948 16.333 10.7782 16.333 10.448V9.20323L18.9997 9.20323V21.6511Z"
+                                        fill="#424241" />
+                                </svg>
+                            </a>
+                            <!-- <a class="nav-link1 mx-3" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <circle cx="22.5" cy="22.5" r="22.5" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_1_3012"
+                                                transform="matrix(0.00444444 0 0 0.00666585 -0.0116279 -0.110374)" />
+                                        </pattern>
+                                        <image id="image0_1_3012" width="225" height="225"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXFxcX////CwsLGxsb7+/vT09PJycn19fXq6urb29ve3t7w8PDOzs7n5+f5+fnt7e30nlkBAAAFHUlEQVR4nO2dC5qqMAyFMTwUBdz/bq+VYYrKKJCkOfXmXwHna5uTpA+KwnEcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3EcA2iO9cdIc5PUdO257y+BU39u66b4HplE3fk6VIcnqmNfl1+gksr6+iIucjl3WYukor7+re6Hoe1y1UhNO3zUd+fUFRmKpOa0Tt6dY5ubRCrOG/QFLk1WGmnt/JxzykcjdZ/jyxJDLlOV2l36AtcsJJb9boG3YcR3DuqODIE3ztYKPkDdmwRmpUToUaSaq++AvRgZMWbOpbQW8hdCAm8ZDugoikzREdCJ2okJPBx6azFLNOwoOgcxojJ98JkaTSJxMpklKrCAKhZGI0drTY/wU5lXoJYibannV9NYy4oozNEAkPHTjop+DTDxVGkIgYJNoyQQJtiIW+EMjGAjm649AjGIaqswcEFQKJ2QPlJbqytki6ZXAAZRJ52J2McaUowzAfs+uFzrYhnzaapphiPWdaJWShqxjqa6kTTQ205TVbsfMa6htL0iYOsXpJrQjHSmCkv1QGPtiHqlYcQ21Gj7fcDU8xOEUuNgSltPzexh+HqFlanCBHZ4OLhCV+gK/3OF6vWvucLv98MUOY2pwu/PS/+D2qJU7pYGbOvDFDW+bbON9p3o3oRxn0bfLgZTgSn6pSfrtr56qLHemtHPTK2319SzGvtjQ9qeb39WgS66Cm073nd0U1PzDdJCO3Gzn6TKpl9Zq7ujGWsQhlA3NwWIMwG9zM08Y/tBrR9VWeczv5CSQuuUNKIUTk23ZJ5RKfVhjnkXotfWIlgX2BSCDYbZR+QTcLhb3dKZDUY2M0d4KWItwhHRah/zsrOgKw4wycwjcgEVcgQDQo23CqSiWEJkFAfod2oE1uIFdA1OsCPqFXYNTjCfb8Ez+iX2x5sKLlVbhtqdDcar9ZevhnbZxoBUD35k23t0d304LYs1ELVbnfFaZ/REJJX9niP8Q19moZGo3m8XR/yBvOnjFfsXcI2c8ZuNo7WMP5HQh6yRGrlmFOJTnyTcT+zRlqPUBI2gTVWNUzUna1ERgecgF4GpNBQ38jGqxVLzQA1A31Rrhk6Yz9QEh/WND0GnuG9huhiTXJkxfAizTHLr6cbJKN6UCU6x/2DTRE1xEeEXi3O0ZUqBN4nJRzHhFB1JPlFTBZlI2kQ8zc3KJ1Le8DIRmFJiknuVS6RK4Ej/JtBfJErDSzOBiY4wJHX6Z1I4v1GUmdCPNirnLLeg3oJLcbX5PcpHNbRvOa1A956QmRPOUXVF+zkaUJynpkYR0bOMJH2nNej1pqyV/aKkz9jr5yj5vrXXz1F5SQLACiMapmierj2ikLyleKdlA/I/2oFxiglxx9B+mHwz0lf34IZQfhDRhlD6bhvgEAoPYooHkTczSIZTLC+cEExsoNKZiGBiY9cCfo/Y/SjIOBMQizWWTe73CMUasJx7jlD+DdKdWUKoY4PRYFtGpO0G1Lx4RaadgTtJhf4fiGqGIwKWCGuGIwKWqP+7IxYCzygjR9IAO5pC7Da9g70TBVpWRNgFBlgT8RV2WxHbKwJMv4BOaEaYaU2K16yZMN/qgV+G7IWIvwyZCxHeDQMsR8wg0DBDDXB5H2EV+hkEGmaoySHQsEJNFoGGFWrAq98JRhUMX1iMMMqLLEIpK5jCbd4vw9nSt/72lewXiN6jmdjfq8Hdknlk92ZwJnbIMMRM7JBhiFlUFoHd1UWaP1QKsPsHA5mkNB+Smn9JqV3wskatnQAAAABJRU5ErkJggg==" />
+                                    </defs>
+                                </svg>
+                            </a> -->
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-primary btn-hover-login rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#SignUpModal"> Sign Up </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div
+            class="d-none position-absolute top-0 end-0 d-lg-flex justify-content-center align-items-center convert-lang ">
+            <span class="">Ar</span>
+        </div>
+    </header>
+
+
+
+
+    <div class="d-flex justify-content-center align-items-center py-5 my-5">
+         <img src="assets/images/comingSoon.png" class=" img-fluid" style="height: 55vh;">
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row col-12 col-xxl-10 mx-auto">
+                <hr class="bg-white text-white mb-5">
+                <div class="col">
+                    <img src="assets/images/logo-dark.png" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4>Company</h4>
+                    <a>Home</a>
+                    <a>About Us</a>
+                    <a>Shop</a>
+                    <a>Blogs</a>
+                    <a>Contact Us</a>
+                </div>
+                <div class="col-md-6  col-lg-2">
+                    <h4>Categories</h4>
+                    <a>Skin Care</a>
+                    <a>Hair Care</a>
+                    <a>Body Care</a>
+                    <a>Foot Care</a>
+                    <a>Foot Care</a>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h4>Support</h4>
+                    <a>Privacy Policy</a>
+                    <a>Terms of service</a>
+                    <a>Return & exchange policy</a>
+                    <a>Delivery information</a>
+                    <a>Faq’s</a>
+                </div>
+                <div class="col">
+                    <h4>Join our Newsletter</h4>
+                    <p>Get the latest update and special offer</p>
+                    <form>
+                        <div class="input-group rouded-0 mb-3">
+                            <input type="text" class="form-control bg-white border-0 rouded-0 shadow-none"
+                                placeholder="Type your email here" aria-describedby="buttong">
+                            <button class="btn btn-primary rouded-0" type="button" id="buttong">Join</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row col-12 col-xxl-10 mx-auto mt-5">
+                <div class="hstack gap-3">
+                    <div class="fs-14px">
+                        <p>Copyright &copy; 2023 Kayacreams. All Right Reseved</p>
+                    </div>
+                    <div class=" ms-auto"><img src="assets/images/visa.svg" class="img-fluid"></div>
+                    <div class="vr"></div>
+                    <div class=""><img src="assets/images/mastercard.svg" class="img-fluid"></div>
+                    <div class="vr"></div>
+                    <div class=""><img src="assets/images/pay.svg" class="img-fluid"></div>
+                    <div class="vr"></div>
+                    <div class=""><img src="assets/images/onDelivery.svg" class="img-fluid">on delivery</div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/lib/animate/aso.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
