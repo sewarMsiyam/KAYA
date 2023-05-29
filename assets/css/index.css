@@ -574,7 +574,6 @@ content: "";
 }
 
 /*********************** Offers ****************************/
-
 .Offers {
   background-color: #f7f3ed;
 }
@@ -729,8 +728,20 @@ footer a {
   opacity: 0.5;
   line-height: 32px;
   display: block;
+  text-decoration: none;
 }
 
 footer .fs-14px {
   font-size: 14px;
+}
+
+footer .vr {
+    display: flex;
+    justify-content: center;
+    width: 1px;
+    min-height: 1px;
+    background-color: #fff;
+    opacity: 0.25;
+    height: 30px;
+    align-items: center;
 }
