@@ -83,11 +83,12 @@ header nav.navbar .navbar-nav .nav-item .btn-primary {
 
 @media (min-width: 992px) {
   header nav.navbar .navbar-nav .nav-item .btn-primary {
-  font-size: 1vw;
-}
+    font-size: 1vw;
+  }
+
   header nav.navbar .navbar-nav .nav-item .nav-link {
-  font-size: 1vw;
-}
+    font-size: 1vw;
+  }
 
   .h-navbar {
     height: 110px;
@@ -542,7 +543,8 @@ header .nav-item:hover .nav-link::after {
 @media (min-width: 640px) {
   .TopProducts .swiper .swiper-slide .card .card-img-top {
     height: 40vw;
-}
+  }
+
   .TopProducts .w-TopProducts {
     width: 75%;
   }
@@ -554,8 +556,9 @@ header .nav-item:hover .nav-link::after {
 
 @media (min-width: 992px) {
   .TopProducts .swiper .swiper-slide .card .card-img-top {
-  height: 16.145833333333332vw;
-}
+    height: 16.145833333333332vw;
+  }
+
   .TopProducts .w-TopProducts {
     width: 50%;
   }
@@ -590,6 +593,7 @@ header .nav-item:hover .nav-link::after {
   border-color: transparent;
   background-color: var(--primary);
 }
+
 /*********************** Offers ****************************/
 .Offers {
   background-color: #f7f3ed;
@@ -730,9 +734,10 @@ header .nav-item:hover .nav-link::after {
   margin-top: -13%;
   position: relative;
 }
-.NewCollection .margin-negitve h4{
-font-family: "PlayfairDisplay";
-  font-size:  20px;
+
+.NewCollection .margin-negitve h4 {
+  font-family: "PlayfairDisplay";
+  font-size: 20px;
   color: #FEFCFB;
 }
 
@@ -742,10 +747,11 @@ font-family: "PlayfairDisplay";
     width: 92%;
     height: 26.041666666666668vw;
   }
-  .NewCollection .margin-negitve h4{
-  font-size:  1.5vw;
-  color: #FEFCFB;
-}
+
+  .NewCollection .margin-negitve h4 {
+    font-size: 1.5vw;
+    color: #FEFCFB;
+  }
 }
 
 /************************* footer *****************************************/
@@ -775,6 +781,7 @@ footer .items-list a {
 footer .items-list a:hover {
   opacity: 0.8;
 }
+
 footer .fs-14px {
   font-size: 13px;
 }
@@ -800,14 +807,121 @@ footer .vr {
     font-size: 24px;
     margin-top: 0;
   }
-footer p,
-footer .items-list a {
-  font-size: 18px;
-  margin-top: 5px;
-}
-footer .fs-14px {
-  font-size: 14px;
+
+  footer p,
+  footer .items-list a {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  footer .fs-14px {
+    font-size: 14px;
+  }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** shop page ***************/
+.breadcrumb-item+.breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, "\f105");
+  color: #FEFCFB;
+}
+
+.bg-shop {
+  background-image: url(../images/bg-shop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-size: cover;
+  height: 30vh;
+}
+
+.bg-img-container {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.bg-img-container .container h1 {
+  font-weight: 600;
+  font-size: 10vw;
+  color: #FEFCFB;
+}
+.bg-img-container .container .breadcrumb .breadcrumb-item,
+.bg-img-container .container .breadcrumb .breadcrumb-item a {
+  font-size: 3.5vw;
+  color: #FEFCFB;
+  text-decoration: none;
+}
+
+.Productspags-love-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #F7F3ED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #E4E0DA;
+}
+
+.Productspags-love-img:hover {
+  color: rgba(255, 0, 0, 0.788);
+}
+
+.Productspags-love-img.active {
+  color: #F86F64;
+}
+
+.nav-Filter-Categories .nav-link::before{
+content: "\f061";
+padding: 0 5px;
+}
+
+@media (min-width: 992px) {
+.bg-shop {
+  height: 58vh;
+}
+.bg-img-container .container h1 {
+  font-size: 4.3vw;
+}
+.bg-img-container .container .breadcrumb .breadcrumb-item,
+.bg-img-container .container .breadcrumb .breadcrumb-item a {
+  font-size: 1.5vw;
+}
 
 }
