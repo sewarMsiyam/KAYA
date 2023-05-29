@@ -39,7 +39,7 @@ html {
 /******************* header ************************/
 header nav.navbar .navbar-nav .nav-item .nav-link {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 27px;
   color: #615e5b;
   position: relative;
@@ -309,7 +309,7 @@ content: "";
 
 @media (min-width: 992px) {
   .title-head {
-    font-size: 96px;
+    font-size: 5vw;
     line-height: 117%;
     margin: 0;
   }
@@ -327,7 +327,7 @@ content: "";
   }
 
   .sup-title-head {
-    font-size: 24px;
+    font-size: 1.2vw;
     line-height: 167%;
   }
 
@@ -409,11 +409,11 @@ content: "";
   }
 
   .title-sec {
-    font-size: 56px;
+    font-size: 3.6vw;
   }
 
   .sup-title {
-    font-size: 18px;
+    font-size: 0.9375vw;
   }
 
   .why-choosing-Us {
@@ -421,11 +421,11 @@ content: "";
   }
 
   .why-choosing-Us h4 {
-    font-size: 24px;
+    font-size: 1.25vw;
   }
 
   .why-choosing-Us p {
-    font-size: 18px;
+    font-size: 0.9375vw;
   }
 }
 
