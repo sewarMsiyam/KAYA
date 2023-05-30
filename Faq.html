@@ -123,347 +123,67 @@
         </a>
     </header>
 
-    <section>
-        <div class="bg-shop">
-            <div class="d-flex align-items-center h-100 w-100 py-5 bg-img-container">
-                <div class="container">
-                    <h1>Shop</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">shop </li>
-                        </ol>
-                    </nav>
-                </div>
+
+
+    
+
+ <section>
+        <div class="container-fluid col-11 col-xxl-10 Support my-5">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Delivery information</li>
+                    </ol>
+                </nav>
             </div>
-        </div>
+            <div class="row">
+                <h2 class="title-sec">Delivery information</h2>
+                <div class="mt-3 p-3 p-lg-5  ">
+                       <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item bg-light-primary">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
 
-        <div class="container-fluid col-lg-11 mb-5">
-            <div class="row justify-content-evenly mt-3 mt-lg-5">
-                <div class="col-12 col-lg">
-                    <div class="d-flex flex-lg-column align-items-center align-items-lg-start justify-content-between w-lg-100">
-                        <div class="Search-100">
-                            <label>
-                                <h4 class="tit-filter p-0">Product Search</h4>
-                            </label>
-                            <div class="position-relative">
-                                <input class="form-control shadow-none" placeholder="Search Here">
-                                <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y px-2"></i>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary rounded-0 filter-icon d-lg-none" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                            aria-controls="offcanvasExample">
-                            <i class=" fa-solid fa-filter"></i>
-                        </button>
-                    </div>
-                    <hr class="my-4">
-                    <div class="d-lg-none offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                                <div class="Categories-filter">
-                            <h4 class="tit-filter">Categories</h4>
-                            <nav class="nav flex-column nav-Filter-Categories">
-                                <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                <a class="nav-link" href="#">Skin Care (15)</a>
-                                <a class="nav-link" href="#">hair care (6)</a>
-                                <a class="nav-link" href="#">body care (10)</a>
-                                <a class="nav-link" href="#">foot care (5)</a>
-                                <a class="nav-link" href="#">supplements (5)</a>
-                            </nav>
-                        </div>
-                        <div class="Filter-price">
-                            <h4 class="tit-filter">Filter by price</h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                    <label class="form-check-label" for="all">All Price </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                    <label class="form-check-label" for="one">$100 - $250</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$250 - $500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="Filter-Rating">
-                            <h4 class="tit-filter">Filter by Rating </h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check ">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star1">
-                                    <label class="form-check-label" for="Star1">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star2">
-                                    <label class="form-check-label" for="Star2">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star3">
-                                    <label class="form-check-label" for="Star3">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star4">
-                                    <label class="form-check-label" for="Star4">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star5">
-                                    <label class="form-check-label" for="Star5">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                            </nav>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="border-filter d-none d-lg-block p-3 mt-3">
-                        <div class="Categories-filter">
-                            <h4 class="tit-filter">Categories</h4>
-                            <nav class="nav flex-column nav-Filter-Categories">
-                                <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                <a class="nav-link" href="#">Skin Care (15)</a>
-                                <a class="nav-link" href="#">hair care (6)</a>
-                                <a class="nav-link" href="#">body care (10)</a>
-                                <a class="nav-link" href="#">foot care (5)</a>
-                                <a class="nav-link" href="#">supplements (5)</a>
-                            </nav>
-                        </div>
-                        <div class="Filter-price">
-                            <h4 class="tit-filter">Filter by price</h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                    <label class="form-check-label" for="all">All Price </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                    <label class="form-check-label" for="one">$100 - $250</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$250 - $500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="Filter-Rating">
-                            <h4 class="tit-filter">Filter by Rating </h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check ">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star1">
-                                    <label class="form-check-label" for="Star1">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star2">
-                                    <label class="form-check-label" for="Star2">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star3">
-                                    <label class="form-check-label" for="Star3">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star4">
-                                    <label class="form-check-label" for="Star4">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star5">
-                                    <label class="form-check-label" for="Star5">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-lg-9">
-                    <div class="d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between mb-3">
-                        <p class="fs-14px m-0">Viewing <span class="fw-bold text-dark">20</span> of <span
-                                class="fw-bold text-dark">160</span> product</p>
-                        <div class="col-lg-3 d-flex align-items-center justify-content-start justify-content-lg-end">
-                            <span>Sort by: </span>
-                            <select class="form-select border-0 shadow-none w-75" aria-label="Default select example">
-                                <option selected>Newest Items</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row Product_items gy-4">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 ">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 ">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 ">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 ">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span>  <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 ">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+ 
 
 
-    <footer>
+
+
+  <footer>
         <div class="container-fluid">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between col-12 col-xxl-10 mx-auto text-center text-lg-start">
@@ -517,26 +237,26 @@
                 <div class="items-list">
                     <h4>Company</h4>
                     <a href="index.html">Home</a>
-                    <a href="AboutUs.html">About Us</a>
+                    <a href="comingsoon.html">About Us</a>
                     <a href="comingsoon.html">Shop</a>
                     <a href="comingsoon.html">Blogs</a>
                     <a href="comingsoon.html">Contact Us</a>
                 </div>
                 <div class="items-list">
                     <h4>Categories</h4>
-                    <a href="Skin.html">Skin Care</a>
-                    <a href="Hair.html">Hair Care</a>
-                    <a href="Body.html">Body Care</a>
-                    <a href="Foot.html">Foot Care</a>
-                    <a href="Foot.html">Foot Care</a>
+                    <a href="comingsoon.html">Skin Care</a>
+                    <a href="comingsoon.html">Hair Care</a>
+                    <a href="comingsoon.html">Body Care</a>
+                    <a href="comingsoon.html">Foot Care</a>
+                    <a href="comingsoon.html">Foot Care</a>
                 </div>
                 <div class="items-list">
                     <h4>Support</h4>
-                    <a href="PrivacyPolicy.html">Privacy Policy</a>
-                    <a href="TermsService.html">Terms of service</a>
-                    <a href="Return.html">Return & exchange policy</a>
-                    <a href="Delivery.html">Delivery information</a>
-                    <a href="Faq.html">Faq’s</a>
+                    <a href="comingsoon.html">Privacy Policy</a>
+                    <a href="comingsoon.html">Terms of service</a>
+                    <a href="comingsoon.html">Return & exchange policy</a>
+                    <a href="comingsoon.html">Delivery information</a>
+                    <a href="comingsoon.html">Faq’s</a>
                 </div>
                 <div class="col-lg-3">
                     <h4>Join our Newsletter</h4>
@@ -694,20 +414,6 @@
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="assets/lib/animate/aso.js"></script>
     <script src="assets/js/index.js"></script>
-    <script>
-
-
-        var elements = document.getElementsByClassName("Productspags-love-img");
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", function () {
-                this.classList.toggle('active');
-            });
-        }
-
-
-
-
-    </script>
 </body>
 
 </html>
