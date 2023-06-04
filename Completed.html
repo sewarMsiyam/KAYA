@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
+     <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
         <div class="container-fluid ">
             <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
                 <a class="navbar-brand me-lg-5" href="index.html"><img src="assets/images/logo.png"
@@ -121,357 +121,58 @@
 
 
 
+    <style>
+        .wiz-doneColor::after {
+            width: 100%;
+        }
+    </style>
 
-    <section>
-        <div class="bg-shop">
-            <div class="d-flex align-items-center h-100 w-100 py-5 bg-img-container">
-                <div class="container">
-                    <h1>Shop</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">shop </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <section class="container-fluid col-12 col-xxl-10 Support my-4">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-secondary text-opacity-50" aria-current="page">Shopping Cart</li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
 
-        <div class="container-fluid col-lg-11 mb-5">
-            <div class="row justify-content-evenly mt-3 mt-lg-5">
-                <div class="col-12 col-lg"  data-aos="flip-left" data-aos-easing="linear" data-aos-duration="500">
-                    <div
-                        class="d-flex flex-lg-column align-items-center align-items-lg-start justify-content-between w-lg-100">
-                        <div class="Search-100">
-                            <label>
-                                <h4 class="tit-filter p-0">Product Search</h4>
-                            </label>
-                            <div class="position-relative">
-                                <input class="form-control shadow-none" placeholder="Search Here">
-                                <i
-                                    class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y px-2"></i>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary rounded-0 filter-icon d-lg-none" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                            aria-controls="offcanvasExample">
-                            <i class=" fa-solid fa-filter"></i>
-                        </button>
-                    </div>
-                    <hr class="my-4">
-                    <div class="d-lg-none offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="Categories-filter">
-                                <h4 class="tit-filter">Categories</h4>
-                                <nav class="nav flex-column nav-Filter-Categories">
-                                    <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                    <a class="nav-link" href="#">Skin Care (15)</a>
-                                    <a class="nav-link" href="#">hair care (6)</a>
-                                    <a class="nav-link" href="#">body care (10)</a>
-                                    <a class="nav-link" href="#">foot care (5)</a>
-                                    <a class="nav-link" href="#">supplements (5)</a>
-                                </nav>
-                            </div>
-                            <div class="Filter-price">
-                                <h4 class="tit-filter">Filter by price</h4>
-                                <nav class="nav flex-column">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                        <label class="form-check-label" for="all">All Price </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                        <label class="form-check-label" for="one">$100 - $250</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$250 - $500</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div class="Filter-Rating">
-                                <h4 class="tit-filter">Filter by Rating </h4>
-                                <nav class="nav flex-column">
-                                    <div class="form-check ">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star1">
-                                        <label class="form-check-label" for="Star1">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star2">
-                                        <label class="form-check-label" for="Star2">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star3">
-                                        <label class="form-check-label" for="Star3">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star4">
-                                        <label class="form-check-label" for="Star4">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star5">
-                                        <label class="form-check-label" for="Star5">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-filter d-none d-lg-block p-3 mt-3">
-                        <div class="Categories-filter">
-                            <h4 class="tit-filter">Categories</h4>
-                            <nav class="nav flex-column nav-Filter-Categories">
-                                <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                <a class="nav-link" href="#">Skin Care (15)</a>
-                                <a class="nav-link" href="#">hair care (6)</a>
-                                <a class="nav-link" href="#">body care (10)</a>
-                                <a class="nav-link" href="#">foot care (5)</a>
-                                <a class="nav-link" href="#">supplements (5)</a>
-                            </nav>
-                        </div>
-                        <div class="Filter-price">
-                            <h4 class="tit-filter">Filter by price</h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                    <label class="form-check-label" for="all">All Price </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                    <label class="form-check-label" for="one">$100 - $250</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$250 - $500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="Filter-Rating">
-                            <h4 class="tit-filter">Filter by Rating </h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check ">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star1">
-                                    <label class="form-check-label" for="Star1">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star2">
-                                    <label class="form-check-label" for="Star2">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star3">
-                                    <label class="form-check-label" for="Star3">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star4">
-                                    <label class="form-check-label" for="Star4">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star5">
-                                    <label class="form-check-label" for="Star5">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-lg-9">
-                    <div
-                        class="d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between mb-3">
-                        <p class="fs-14px m-0">Viewing <span class="fw-bold text-dark">20</span> of <span
-                                class="fw-bold text-dark">160</span> product</p>
-                        <div class="col-lg-3 d-flex align-items-center justify-content-start justify-content-lg-end">
-                            <span>Sort by: </span>
-                            <select class="form-select border-0 shadow-none w-75 bg-body"
-                                aria-label="Default select example">
-                                <option selected>Newest Items</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row Product_items gy-4">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="wizard my-5">
+            <ul class="nav nav-tabs justify-content-between border-0 position-relative wiz-doneColor" id="myTab"
+                role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row active align-items-center p-2 p-lg-3"
+                        href="ShoppingCart.html">
+                        <span class="num">1</span>
+                        <span class="tit">Shopping Cart</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row active active2 align-items-center p-2 p-lg-3"
+                        href="Checkout.html">
+                        <span class="num">2</span>
+                        <span class="tit">Checkout</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row active align-items-center p-2 p-lg-3"
+                        href="Completed.html">
+                        <span class="num">3</span>
+                        <span class="tit">Completed</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="row col-12 col-lg-8 mx-auto mt-5 Shopping-cart row align-items-center mb-4 Checkout-Complete">
+                <h2 class="title-sec text-center">Checkout Complete!</h2>
+                <p class="sup-title my-lg-3 px-lg-5 text-center w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="text-center mt-3">
+                    <a href="shop.html" class="btn btn-primary rounded-0 shadow-none lh-lg">Go Shopping Again</a>
+                </p>
             </div>
         </div>
     </section>
-
-
-
-
 
     <footer>
         <div class="container-fluid">
@@ -579,24 +280,13 @@
             </div>
         </div>
     </footer>
+
+
+
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="assets/lib/animate/aso.js"></script>
     <script src="assets/js/index.js"></script>
-    <script>
-
-
-        var elements = document.getElementsByClassName("Productspags-love-img");
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", function () {
-                this.classList.toggle('active');
-            });
-        }
-
-
-
-
-    </script>
 </body>
 
 </html>

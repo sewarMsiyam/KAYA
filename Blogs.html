@@ -34,7 +34,7 @@
                                     fill="#424241" />
                             </svg>
                         </a>
-                        <a class="nav-link mx-2" href="comingsoon.html">
+                        <a class="nav-link mx-2" href="ShoppingCart.html">
                             <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -54,7 +54,15 @@
                 </div>
                 <div class="d-flex flex-lg-row justify-content-lg-between align-items-center offcanvas offcanvas-end w-75"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center">
+                    <button type="button" class="btn shadow-none d-lg-none position-absolute start-0 p-3 bg-body"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-circle-xmark text-end text-primary fs-3"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center py-5 py-lg-0">
+                        <li class="nav-item mb-3 d-lg-none">
+                            <img src="assets/images/logo.png" class="img-fluid" />
+                            <hr>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -82,7 +90,7 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a class="nav-link1 mx-3" href="comingsoon.html">
+                            <a class="nav-link1 mx-3" href="ShoppingCart.html">
                                 <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -90,20 +98,15 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a href="profile.html" class="nav-link1 mx-3" >
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <circle cx="22.5" cy="22.5" r="22.5" fill="url(#pattern0)" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_1_3012"
-                                                transform="matrix(0.00444444 0 0 0.00666585 -0.0116279 -0.110374)" />
-                                        </pattern>
-                                        <image id="image0_1_3012" width="225" height="225"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXFxcX////CwsLGxsb7+/vT09PJycn19fXq6urb29ve3t7w8PDOzs7n5+f5+fnt7e30nlkBAAAFHUlEQVR4nO2dC5qqMAyFMTwUBdz/bq+VYYrKKJCkOfXmXwHna5uTpA+KwnEcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3EcA2iO9cdIc5PUdO257y+BU39u66b4HplE3fk6VIcnqmNfl1+gksr6+iIucjl3WYukor7+re6Hoe1y1UhNO3zUd+fUFRmKpOa0Tt6dY5ubRCrOG/QFLk1WGmnt/JxzykcjdZ/jyxJDLlOV2l36AtcsJJb9boG3YcR3DuqODIE3ztYKPkDdmwRmpUToUaSaq++AvRgZMWbOpbQW8hdCAm8ZDugoikzREdCJ2okJPBx6azFLNOwoOgcxojJ98JkaTSJxMpklKrCAKhZGI0drTY/wU5lXoJYibannV9NYy4oozNEAkPHTjop+DTDxVGkIgYJNoyQQJtiIW+EMjGAjm649AjGIaqswcEFQKJ2QPlJbqytki6ZXAAZRJ52J2McaUowzAfs+uFzrYhnzaapphiPWdaJWShqxjqa6kTTQ205TVbsfMa6htL0iYOsXpJrQjHSmCkv1QGPtiHqlYcQ21Gj7fcDU8xOEUuNgSltPzexh+HqFlanCBHZ4OLhCV+gK/3OF6vWvucLv98MUOY2pwu/PS/+D2qJU7pYGbOvDFDW+bbON9p3o3oRxn0bfLgZTgSn6pSfrtr56qLHemtHPTK2319SzGvtjQ9qeb39WgS66Cm073nd0U1PzDdJCO3Gzn6TKpl9Zq7ujGWsQhlA3NwWIMwG9zM08Y/tBrR9VWeczv5CSQuuUNKIUTk23ZJ5RKfVhjnkXotfWIlgX2BSCDYbZR+QTcLhb3dKZDUY2M0d4KWItwhHRah/zsrOgKw4wycwjcgEVcgQDQo23CqSiWEJkFAfod2oE1uIFdA1OsCPqFXYNTjCfb8Ez+iX2x5sKLlVbhtqdDcar9ZevhnbZxoBUD35k23t0d304LYs1ELVbnfFaZ/REJJX9niP8Q19moZGo3m8XR/yBvOnjFfsXcI2c8ZuNo7WMP5HQh6yRGrlmFOJTnyTcT+zRlqPUBI2gTVWNUzUna1ERgecgF4GpNBQ38jGqxVLzQA1A31Rrhk6Yz9QEh/WND0GnuG9huhiTXJkxfAizTHLr6cbJKN6UCU6x/2DTRE1xEeEXi3O0ZUqBN4nJRzHhFB1JPlFTBZlI2kQ8zc3KJ1Le8DIRmFJiknuVS6RK4Ej/JtBfJErDSzOBiY4wJHX6Z1I4v1GUmdCPNirnLLeg3oJLcbX5PcpHNbRvOa1A956QmRPOUXVF+zkaUJynpkYR0bOMJH2nNej1pqyV/aKkz9jr5yj5vrXXz1F5SQLACiMapmierj2ikLyleKdlA/I/2oFxiglxx9B+mHwz0lf34IZQfhDRhlD6bhvgEAoPYooHkTczSIZTLC+cEExsoNKZiGBiY9cCfo/Y/SjIOBMQizWWTe73CMUasJx7jlD+DdKdWUKoY4PRYFtGpO0G1Lx4RaadgTtJhf4fiGqGIwKWCGuGIwKWqP+7IxYCzygjR9IAO5pC7Da9g70TBVpWRNgFBlgT8RV2WxHbKwJMv4BOaEaYaU2K16yZMN/qgV+G7IWIvwyZCxHeDQMsR8wg0DBDDXB5H2EV+hkEGmaoySHQsEJNFoGGFWrAq98JRhUMX1iMMMqLLEIpK5jCbd4vw9nSt/72lewXiN6jmdjfq8Hdknlk92ZwJnbIMMRM7JBhiFlUFoHd1UWaP1QKsPsHA5mkNB+Smn9JqV3wskatnQAAAABJRU5ErkJggg==" />
-                                    </defs>
-                                </svg>
+                            <a href="profile.html" class="nav-link1 mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="profile.html" class="nav-link mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
                             </a>
                         </li>
                     </ul>
@@ -117,12 +120,334 @@
     </header>
 
 
-    <div class="d-flex justify-content-center align-items-center py-5 my-5">
-        <img src="assets/images/comingSoon.png" class=" img-fluid" style="height: 55vh;">
-    </div>
+    <section>
+        <div class="bg-Blogs">
+            <div class="d-flex align-items-center h-100 w-100 py-5 bg-img-container">
+                <div class="container">
+                    <h1>Blogs</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blogs </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid col-lg-10 mb-5 mt-5">
+            <div class="row d-flex flex-column-reverse flex-lg-row gap-3">
+                <div class="col-12 col-lg-8 Blogs-items" >
+                    <div class="card rounded-0 border-0 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                        <div class="position-relative ">
+                            <img src="assets/images/sec1_AboutU.png" class="card-img-top rounded-0" alt="...">
+                            <div class="position-absolute start-0 top-0 text-white p-3 text-center DateBox">
+                                <span class="fw-bolder">05</span>
+                                <span class="">Feb</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="Skin.html" class="text-decoration-none text-primary link-shop">Skin Care</a>
+                                <div>
+                                    <span class="px-3 px-lg-4">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0012 11.1244C11.3378 11.1244 12.4304 10.0386 12.4304 8.71049C12.4304 7.37268 11.3378 6.28692 10.0012 6.28692C9.8841 6.28692 9.76702 6.29662 9.65971 6.31601C9.62068 7.38238 8.74263 8.23547 7.65971 8.23547H7.61093C7.58166 8.39058 7.56215 8.54569 7.56215 8.71049C7.56215 10.0386 8.65483 11.1244 10.0012 11.1244Z"
+                                                fill="#615E5B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.7366 2.76034C17.4439 4.07876 18.8976 6.00792 19.9415 8.4218C20.0195 8.60599 20.0195 8.81926 19.9415 8.99376C17.8537 13.8215 14.1366 16.7104 10 16.7104H9.99024C5.86341 16.7104 2.14634 13.8215 0.0585366 8.99376C-0.0195122 8.81926 -0.0195122 8.60599 0.0585366 8.4218C2.14634 3.59405 5.86341 0.714844 9.99024 0.714844H10C12.0683 0.714844 14.0293 1.43222 15.7366 2.76034ZM6.09756 8.71263C6.09756 10.8454 7.8439 12.5806 10 12.5806C12.1463 12.5806 13.8927 10.8454 13.8927 8.71263C13.8927 6.57019 12.1463 4.83491 10 4.83491C7.8439 4.83491 6.09756 6.57019 6.09756 8.71263Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        4858
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.6653 0.0103353C16.1038 -0.0795717 17.5224 0.419911 18.5913 1.3989C19.5703 2.46779 20.0697 3.88633 19.9898 5.33483V14.6652C20.0797 16.1137 19.5703 17.5322 18.6013 18.6011C17.5323 19.5801 16.1038 20.0796 14.6653 19.9897H5.33487C3.88636 20.0796 2.46781 19.5801 1.39891 18.6011C0.419915 17.5322 -0.0795724 16.1137 0.0103353 14.6652V5.33483C-0.0795724 3.88633 0.419915 2.46779 1.39891 1.3989C2.46781 0.419911 3.88636 -0.0795717 5.33487 0.0103353H14.6653ZM8.98113 14.845L15.7042 8.10196C16.3136 7.4826 16.3136 6.48364 15.7042 5.87427L14.4056 4.57561C13.7862 3.95625 12.7872 3.95625 12.1679 4.57561L11.4985 5.25491C11.3986 5.35481 11.3986 5.52463 11.4985 5.62453C11.4985 5.62453 13.0869 7.20289 13.1169 7.24285C13.2268 7.36273 13.2967 7.52256 13.2967 7.70238C13.2967 8.06201 13.007 8.36169 12.6374 8.36169C12.4675 8.36169 12.3077 8.29177 12.1978 8.18188L10.5295 6.5236C10.4496 6.44368 10.3098 6.44368 10.2298 6.5236L5.46474 11.2887C5.13507 11.6183 4.94527 12.0579 4.93528 12.5274L4.87534 14.8949C4.87534 15.0248 4.9153 15.1447 5.00521 15.2346C5.09512 15.3245 5.21499 15.3744 5.34486 15.3744H7.69245C8.17196 15.3744 8.63149 15.1846 8.98113 14.845Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        20 Comments
+                                    </span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Amazing natural beauty hacks</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                                consectetur
+                            </p>
+                            <a href="BlogDetails.html" class="link-card">Read More <i
+                                    class="fa-solid fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mb-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                        <div class="position-relative ">
+                            <img src="assets/images/sec1_AboutU.png" class="card-img-top rounded-0" alt="...">
+                            <div class="position-absolute start-0 top-0 text-white p-3 text-center DateBox">
+                                <span class="fw-bolder">05</span>
+                                <span class="">Feb</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <a href="Skin.html" class="text-decoration-none text-primary link-shop">Skin Care</a>
+                                <div>
+                                    <span class="px-3 px-lg-4">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0012 11.1244C11.3378 11.1244 12.4304 10.0386 12.4304 8.71049C12.4304 7.37268 11.3378 6.28692 10.0012 6.28692C9.8841 6.28692 9.76702 6.29662 9.65971 6.31601C9.62068 7.38238 8.74263 8.23547 7.65971 8.23547H7.61093C7.58166 8.39058 7.56215 8.54569 7.56215 8.71049C7.56215 10.0386 8.65483 11.1244 10.0012 11.1244Z"
+                                                fill="#615E5B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.7366 2.76034C17.4439 4.07876 18.8976 6.00792 19.9415 8.4218C20.0195 8.60599 20.0195 8.81926 19.9415 8.99376C17.8537 13.8215 14.1366 16.7104 10 16.7104H9.99024C5.86341 16.7104 2.14634 13.8215 0.0585366 8.99376C-0.0195122 8.81926 -0.0195122 8.60599 0.0585366 8.4218C2.14634 3.59405 5.86341 0.714844 9.99024 0.714844H10C12.0683 0.714844 14.0293 1.43222 15.7366 2.76034ZM6.09756 8.71263C6.09756 10.8454 7.8439 12.5806 10 12.5806C12.1463 12.5806 13.8927 10.8454 13.8927 8.71263C13.8927 6.57019 12.1463 4.83491 10 4.83491C7.8439 4.83491 6.09756 6.57019 6.09756 8.71263Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        4858
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.6653 0.0103353C16.1038 -0.0795717 17.5224 0.419911 18.5913 1.3989C19.5703 2.46779 20.0697 3.88633 19.9898 5.33483V14.6652C20.0797 16.1137 19.5703 17.5322 18.6013 18.6011C17.5323 19.5801 16.1038 20.0796 14.6653 19.9897H5.33487C3.88636 20.0796 2.46781 19.5801 1.39891 18.6011C0.419915 17.5322 -0.0795724 16.1137 0.0103353 14.6652V5.33483C-0.0795724 3.88633 0.419915 2.46779 1.39891 1.3989C2.46781 0.419911 3.88636 -0.0795717 5.33487 0.0103353H14.6653ZM8.98113 14.845L15.7042 8.10196C16.3136 7.4826 16.3136 6.48364 15.7042 5.87427L14.4056 4.57561C13.7862 3.95625 12.7872 3.95625 12.1679 4.57561L11.4985 5.25491C11.3986 5.35481 11.3986 5.52463 11.4985 5.62453C11.4985 5.62453 13.0869 7.20289 13.1169 7.24285C13.2268 7.36273 13.2967 7.52256 13.2967 7.70238C13.2967 8.06201 13.007 8.36169 12.6374 8.36169C12.4675 8.36169 12.3077 8.29177 12.1978 8.18188L10.5295 6.5236C10.4496 6.44368 10.3098 6.44368 10.2298 6.5236L5.46474 11.2887C5.13507 11.6183 4.94527 12.0579 4.93528 12.5274L4.87534 14.8949C4.87534 15.0248 4.9153 15.1447 5.00521 15.2346C5.09512 15.3245 5.21499 15.3744 5.34486 15.3744H7.69245C8.17196 15.3744 8.63149 15.1846 8.98113 14.845Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        20 Comments
+                                    </span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Amazing natural beauty hacks</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                                consectetur
+                            </p>
+                            <a href="BlogDetails.html" class="link-card">Read More <i
+                                    class="fa-solid fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mb-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                        <div class="position-relative ">
+                            <img src="assets/images/sec1_AboutU.png" class="card-img-top rounded-0" alt="...">
+                            <div class="position-absolute start-0 top-0 text-white p-3 text-center DateBox">
+                                <span class="fw-bolder">05</span>
+                                <span class="">Feb</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-4">
+                                <a href="Skin.html" class="text-decoration-none text-primary link-shop">Skin Care</a>
+                                <div>
+                                    <span class="px-3 px-lg-4">
+                                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.0012 11.1244C11.3378 11.1244 12.4304 10.0386 12.4304 8.71049C12.4304 7.37268 11.3378 6.28692 10.0012 6.28692C9.8841 6.28692 9.76702 6.29662 9.65971 6.31601C9.62068 7.38238 8.74263 8.23547 7.65971 8.23547H7.61093C7.58166 8.39058 7.56215 8.54569 7.56215 8.71049C7.56215 10.0386 8.65483 11.1244 10.0012 11.1244Z"
+                                                fill="#615E5B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.7366 2.76034C17.4439 4.07876 18.8976 6.00792 19.9415 8.4218C20.0195 8.60599 20.0195 8.81926 19.9415 8.99376C17.8537 13.8215 14.1366 16.7104 10 16.7104H9.99024C5.86341 16.7104 2.14634 13.8215 0.0585366 8.99376C-0.0195122 8.81926 -0.0195122 8.60599 0.0585366 8.4218C2.14634 3.59405 5.86341 0.714844 9.99024 0.714844H10C12.0683 0.714844 14.0293 1.43222 15.7366 2.76034ZM6.09756 8.71263C6.09756 10.8454 7.8439 12.5806 10 12.5806C12.1463 12.5806 13.8927 10.8454 13.8927 8.71263C13.8927 6.57019 12.1463 4.83491 10 4.83491C7.8439 4.83491 6.09756 6.57019 6.09756 8.71263Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        4858
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14.6653 0.0103353C16.1038 -0.0795717 17.5224 0.419911 18.5913 1.3989C19.5703 2.46779 20.0697 3.88633 19.9898 5.33483V14.6652C20.0797 16.1137 19.5703 17.5322 18.6013 18.6011C17.5323 19.5801 16.1038 20.0796 14.6653 19.9897H5.33487C3.88636 20.0796 2.46781 19.5801 1.39891 18.6011C0.419915 17.5322 -0.0795724 16.1137 0.0103353 14.6652V5.33483C-0.0795724 3.88633 0.419915 2.46779 1.39891 1.3989C2.46781 0.419911 3.88636 -0.0795717 5.33487 0.0103353H14.6653ZM8.98113 14.845L15.7042 8.10196C16.3136 7.4826 16.3136 6.48364 15.7042 5.87427L14.4056 4.57561C13.7862 3.95625 12.7872 3.95625 12.1679 4.57561L11.4985 5.25491C11.3986 5.35481 11.3986 5.52463 11.4985 5.62453C11.4985 5.62453 13.0869 7.20289 13.1169 7.24285C13.2268 7.36273 13.2967 7.52256 13.2967 7.70238C13.2967 8.06201 13.007 8.36169 12.6374 8.36169C12.4675 8.36169 12.3077 8.29177 12.1978 8.18188L10.5295 6.5236C10.4496 6.44368 10.3098 6.44368 10.2298 6.5236L5.46474 11.2887C5.13507 11.6183 4.94527 12.0579 4.93528 12.5274L4.87534 14.8949C4.87534 15.0248 4.9153 15.1447 5.00521 15.2346C5.09512 15.3245 5.21499 15.3744 5.34486 15.3744H7.69245C8.17196 15.3744 8.63149 15.1846 8.98113 14.845Z"
+                                                fill="#615E5B" />
+                                        </svg>
+                                        20 Comments
+                                    </span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Amazing natural beauty hacks</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                                consectetur
+                            </p>
+                            <a href="BlogDetails.html" class="link-card">Read More <i class="fa-solid fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg" data-aos="flip-left" data-aos-easing="linear" data-aos-duration="500">
+                    <div
+                        class="d-flex flex-lg-column align-items-center align-items-lg-start justify-content-between w-lg-100">
+                        <div class="Search-100">
+                            <label>
+                                <h4 class="tit-filter p-0">Blog Search</h4>
+                            </label>
+                            <div class="position-relative">
+                                <input class="form-control form-control-lg border-secondary-50 shadow-none"
+                                    placeholder="Search Here">
+                                <i
+                                    class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y px-2 text-secondary"></i>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary rounded-0 filter-icon d-lg-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <i class=" fa-solid fa-filter"></i>
+                        </button>
+                    </div>
 
-    
- <footer>
+                         <div class="d-lg-none offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <h4 class="tit-filter mb-3">Recent Blog</h4>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mt-5 mb-4">
+                        <div class="Categories-filter">
+                            <h4 class="tit-filter">Categories</h4>
+                            <nav class="nav flex-column nav-Filter-Categories">
+                                <a class="nav-link" href="#">Skin Care (15)</a>
+                                <a class="nav-link" href="#">hair care (6)</a>
+                                <a class="nav-link" href="#">body care (10)</a>
+                                <a class="nav-link" href="#">foot care (5)</a>
+                                <a class="nav-link" href="#">supplements (5)</a>
+                            </nav>
+                        </div>
+
+                        <hr class="mt-5 mb-4">
+
+                        <h4 class="tit-filter">Follow Us</h4>
+                        <div class="d-flex Follow-social-media">
+                            <a><i class="fa-brands fa-facebook-f"></i></a>
+                            <a><i class="fa-brands fa-google"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a>
+                            <a><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-lg-block ">
+                        <hr class="mt-5 mb-4">
+                        <h4 class="tit-filter mb-3">Recent Blog</h4>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card Recent-Blog  rounded-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/sec1_AboutU.png" class="img-fluid h-100 rounded-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Amazing natural beauty hacks</h5>
+                                        <a href="" class="card-text text-primary">Read More <i
+                                                class="fa-solid fa-arrow-right px-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="mt-5 mb-4">
+                        <div class="Categories-filter">
+                            <h4 class="tit-filter">Categories</h4>
+                            <nav class="nav flex-column nav-Filter-Categories">
+                                <a class="nav-link" href="#">Skin Care (15)</a>
+                                <a class="nav-link" href="#">hair care (6)</a>
+                                <a class="nav-link" href="#">body care (10)</a>
+                                <a class="nav-link" href="#">foot care (5)</a>
+                                <a class="nav-link" href="#">supplements (5)</a>
+                            </nav>
+                        </div>
+
+                        <hr class="mt-5 mb-4">
+
+                        <h4 class="tit-filter">Follow Us</h4>
+                        <div class="d-flex Follow-social-media">
+                            <a><i class="fa-brands fa-facebook-f"></i></a>
+                            <a><i class="fa-brands fa-google"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a>
+                            <a><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container-fluid">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between col-12 col-xxl-10 mx-auto text-center text-lg-start">
@@ -221,7 +546,8 @@
                         <div class="vr"></div>
                         <a href="comingsoon.html"><img src="assets/images/pay.svg" class="img-fluid"></a>
                         <div class="vr"></div>
-                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg" class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
+                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg"
+                                class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
                     </div>
                 </div>
             </div>

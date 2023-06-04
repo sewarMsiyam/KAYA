@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
+       <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
         <div class="container-fluid ">
             <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
                 <a class="navbar-brand me-lg-5" href="index.html"><img src="assets/images/logo.png"
@@ -34,7 +34,7 @@
                                     fill="#424241" />
                             </svg>
                         </a>
-                        <a class="nav-link mx-2" href="comingsoon.html">
+                        <a class="nav-link mx-2" href="ShoppingCart.html">
                             <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -54,7 +54,15 @@
                 </div>
                 <div class="d-flex flex-lg-row justify-content-lg-between align-items-center offcanvas offcanvas-end w-75"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center">
+                    <button type="button" class="btn shadow-none d-lg-none position-absolute start-0 p-3 bg-body"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-circle-xmark text-end text-primary fs-3"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center py-5 py-lg-0">
+                        <li class="nav-item mb-3 d-lg-none">
+                            <img src="assets/images/logo.png" class="img-fluid" />
+                            <hr>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -82,7 +90,7 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a class="nav-link1 mx-3" href="comingsoon.html">
+                            <a class="nav-link1 mx-3" href="ShoppingCart.html">
                                 <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -90,20 +98,15 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a href="profile.html" class="nav-link1 mx-3" >
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <circle cx="22.5" cy="22.5" r="22.5" fill="url(#pattern0)" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_1_3012"
-                                                transform="matrix(0.00444444 0 0 0.00666585 -0.0116279 -0.110374)" />
-                                        </pattern>
-                                        <image id="image0_1_3012" width="225" height="225"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXFxcX////CwsLGxsb7+/vT09PJycn19fXq6urb29ve3t7w8PDOzs7n5+f5+fnt7e30nlkBAAAFHUlEQVR4nO2dC5qqMAyFMTwUBdz/bq+VYYrKKJCkOfXmXwHna5uTpA+KwnEcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3EcA2iO9cdIc5PUdO257y+BU39u66b4HplE3fk6VIcnqmNfl1+gksr6+iIucjl3WYukor7+re6Hoe1y1UhNO3zUd+fUFRmKpOa0Tt6dY5ubRCrOG/QFLk1WGmnt/JxzykcjdZ/jyxJDLlOV2l36AtcsJJb9boG3YcR3DuqODIE3ztYKPkDdmwRmpUToUaSaq++AvRgZMWbOpbQW8hdCAm8ZDugoikzREdCJ2okJPBx6azFLNOwoOgcxojJ98JkaTSJxMpklKrCAKhZGI0drTY/wU5lXoJYibannV9NYy4oozNEAkPHTjop+DTDxVGkIgYJNoyQQJtiIW+EMjGAjm649AjGIaqswcEFQKJ2QPlJbqytki6ZXAAZRJ52J2McaUowzAfs+uFzrYhnzaapphiPWdaJWShqxjqa6kTTQ205TVbsfMa6htL0iYOsXpJrQjHSmCkv1QGPtiHqlYcQ21Gj7fcDU8xOEUuNgSltPzexh+HqFlanCBHZ4OLhCV+gK/3OF6vWvucLv98MUOY2pwu/PS/+D2qJU7pYGbOvDFDW+bbON9p3o3oRxn0bfLgZTgSn6pSfrtr56qLHemtHPTK2319SzGvtjQ9qeb39WgS66Cm073nd0U1PzDdJCO3Gzn6TKpl9Zq7ujGWsQhlA3NwWIMwG9zM08Y/tBrR9VWeczv5CSQuuUNKIUTk23ZJ5RKfVhjnkXotfWIlgX2BSCDYbZR+QTcLhb3dKZDUY2M0d4KWItwhHRah/zsrOgKw4wycwjcgEVcgQDQo23CqSiWEJkFAfod2oE1uIFdA1OsCPqFXYNTjCfb8Ez+iX2x5sKLlVbhtqdDcar9ZevhnbZxoBUD35k23t0d304LYs1ELVbnfFaZ/REJJX9niP8Q19moZGo3m8XR/yBvOnjFfsXcI2c8ZuNo7WMP5HQh6yRGrlmFOJTnyTcT+zRlqPUBI2gTVWNUzUna1ERgecgF4GpNBQ38jGqxVLzQA1A31Rrhk6Yz9QEh/WND0GnuG9huhiTXJkxfAizTHLr6cbJKN6UCU6x/2DTRE1xEeEXi3O0ZUqBN4nJRzHhFB1JPlFTBZlI2kQ8zc3KJ1Le8DIRmFJiknuVS6RK4Ej/JtBfJErDSzOBiY4wJHX6Z1I4v1GUmdCPNirnLLeg3oJLcbX5PcpHNbRvOa1A956QmRPOUXVF+zkaUJynpkYR0bOMJH2nNej1pqyV/aKkz9jr5yj5vrXXz1F5SQLACiMapmierj2ikLyleKdlA/I/2oFxiglxx9B+mHwz0lf34IZQfhDRhlD6bhvgEAoPYooHkTczSIZTLC+cEExsoNKZiGBiY9cCfo/Y/SjIOBMQizWWTe73CMUasJx7jlD+DdKdWUKoY4PRYFtGpO0G1Lx4RaadgTtJhf4fiGqGIwKWCGuGIwKWqP+7IxYCzygjR9IAO5pC7Da9g70TBVpWRNgFBlgT8RV2WxHbKwJMv4BOaEaYaU2K16yZMN/qgV+G7IWIvwyZCxHeDQMsR8wg0DBDDXB5H2EV+hkEGmaoySHQsEJNFoGGFWrAq98JRhUMX1iMMMqLLEIpK5jCbd4vw9nSt/72lewXiN6jmdjfq8Hdknlk92ZwJnbIMMRM7JBhiFlUFoHd1UWaP1QKsPsHA5mkNB+Smn9JqV3wskatnQAAAABJRU5ErkJggg==" />
-                                    </defs>
-                                </svg>
+                            <a href="profile.html" class="nav-link1 mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="profile.html" class="nav-link mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
                             </a>
                         </li>
                     </ul>
@@ -117,9 +120,345 @@
     </header>
 
 
+    <section class="my-3 my-lg-5">
+        <div class="container-fluid col-12 col-xxl-11">
+            <div class="row align-items-center" >
+                <div class="col-12 col-lg-7 d-flex justify-content-center p-0 Product-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="p-0 col-9">
+                        <div class="tab-content h-100">
+                            <div id="Details1" class="tab-pane active text-end w-100 h-100">
+                                <img src="assets/images/Details1.png">
+                            </div>
+                            <div id="Details2" class="tab-pane fade text-end w-100 h-100">
+                                <img src="assets/images/Details2.png">
+                            </div>
+                            <div id="Details3" class="tab-pane fade text-end w-100 h-100">
+                                <img src="assets/images/Details3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="col-3 nav flex-column justify-content-around nav-pills more-imgs-prodect" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#Details1">
+                                <img src="assets/images/Details1.png">
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a class="nav-link" data-bs-toggle="pill" href="#Details2">
+                                <img src="assets/images/Details2.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " data-bs-toggle="pill" href="#Details3">
+                                <img src="assets/images/Details3.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5 justify-content-center justify-content-lg-end Product-Details mt-3 mt-0" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <h3 class="mb-2 p-name">Product Name</h3>
+                    <div class="mb-3 mb-lg-4">
+                        <span class="text-primary p-Review">5.0</span>
+                        <img src="assets/images/Star.svg" class="img-fluid">
+                        <img src="assets/images/Star.svg" class="img-fluid">
+                        <img src="assets/images/Star.svg" class="img-fluid">
+                        <img src="assets/images/Star.svg" class="img-fluid">
+                        <img src="assets/images/Star.svg" class="img-fluid">
+                        <span class="p-Review ">Review (12)</span>
+                    </div>
+                    <h4 class="text-primary p-price">$1299.00</h4>
+                    <hr>
+                    <p class="p-disc">100% real leather with stylish design, perfect for formal and informal occasions.
+                    </p>
+                    <div class="text-dark p-like my-4" onclick="like_red()"> <i class="fa-solid fa-heart me-1"></i> Add
+                        to Wishlist</div>
+                    <div
+                        class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-end">
+                        <div class="d-flex flex-lg-column align-items-center align-items-lg-start mb-2 mb-lg-0">
+                            <p class="mb-1 pe-3">Quantity</p>
+                            <div class="p-quantity d-flex">
+                                <button class="btn minus-btn">-</button>
+                                <input type="text" class="form-control counter text-primary" name="number" value="1">
+                                <button class="btn plus-btn">+</button>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary btn-Buy shadow-none rounded-0 mx-2">Buy</button>
+                            <button class="btn btn-primary btn-addCart shadow-none rounded-0 me-5">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-xl-4 mt-5" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                <ul class="nav nav-pills mb-3" id="prodect-Details" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-Description-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Description" type="button" role="tab"
+                            aria-controls="pills-Description" aria-selected="true">Description</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Review-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Review" type="button" role="tab" aria-controls="pills-Review"
+                            aria-selected="false">REVIEWS (0)</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="prodect-DetailsContent">
+                    <div class="tab-pane fade show active" id="pills-Description" role="tabpanel"
+                        aria-labelledby="pills-Description-tab" tabindex="0">
+                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Review" role="tabpanel" aria-labelledby="pills-Review-tab"
+                        tabindex="0">
+                        <div class="row w-lg-75">
+                            <div class="d-flex align-items-start py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                                <img src="assets/images/user.png" class="rounded-circle d-block img-user">
+                                <div class="px-4">
+                                    <h6 class="name">Heba KH</h6>
+                                    <div>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#E0E0E0" />
+                                        </svg>
+                                    </div>
+                                    <p class="coument">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                                </div>
+                            </div>
+                            <span style="border-bottom:2px solid #E4E0DA;"></span>
+                            <div class="d-flex align-items-start py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                                <img src="assets/images/user.png" class="d-block rounded-circle img-user">
+                                <div class="px-4">
+                                    <h6 class="name">Heba KH</h6>
+                                    <div>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#FFD687" />
+                                        </svg>
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.291 0L14.9852 8.2918H23.7037L16.6503 13.4164L19.3444 21.7082L12.291 16.5836L5.23759 21.7082L7.93176 13.4164L0.878338 8.2918H9.59685L12.291 0Z"
+                                                fill="#E0E0E0" />
+                                        </svg>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                                </div>
+                            </div>
+                            <span style="border-bottom:2px solid #E4E0DA;"></span>
+                            <div class="row my-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                                <h3 class="name fw-bolder">Add Review</h3>
+                                <form>
+                                    <div class="form-group mb-4 mt-4">
+                                        <label for="rating text-dark-75">Your Rating:</label>
+                                        <div id="ratingStars" class="d-flex flex-row-reverse justify-content-end pt-3">
+                                            <span class="star" data-value="1">
+                                                <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+                                                        fill="#E0E0E0" />
+                                                </svg>
+                                            </span>
+                                            <span class="star" data-value="2">
+                                                <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+                                                        fill="#E0E0E0" />
+                                                </svg>
+                                            </span>
+                                            <span class="star" data-value="3">
+                                                <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+                                                        fill="#E0E0E0" />
+                                                </svg>
+                                            </span>
+                                            <span class="star" data-value="4">
+                                                <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+                                                        fill="#E0E0E0" />
+                                                </svg>
+                                            </span>
+                                            <span class="star" data-value="5">
+                                                <svg width="50" height="48" viewBox="0 0 50 48" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+                                                        fill="#E0E0E0" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12 col-lg-6 mb-3">
+                                            <input type="email"
+                                                class="form-control form-control-lg rounded-0 shadow-none"
+                                                placeholder="Your Email" id="InputEmail">
+                                        </div>
+                                        <div class="col-12 col-lg-6 mb-3">
+                                            <input type="text"
+                                                class="form-control form-control-lg rounded-0 shadow-none"
+                                                placeholder="Your Name" id="Inputname">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <textarea class="form-control shadow-none rounded-0 "
+                                                placeholder="Your Comment" id="exampleFormControlTextarea1"
+                                                rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="text-end mb-4">
+                                        <button type="submit" class="btn btn-lg btn-primary rounded-0 ">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span style="border-bottom:2px solid #E4E0DA;"></span>
+            </div>
+        </div>
+    </section>
 
-     
- <footer>
+    <section class="my-3 my-lg-5">
+        <div class="container-fluid col-12 col-xxl-10">
+            <div class="row mt-4 TopProducts" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                <h3 class="text-start position-relative fw-bold fs-2 Similar-Product-after m-0">Similar Product</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper my-5">
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0 shadow-sm">
+                                <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text text-primary">$299</p>
+                                    <a href="ProductDetails.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0 shadow-sm">
+                                <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text text-primary">$299</p>
+                                    <a href="ProductDetails.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0 shadow-sm">
+                                <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text text-primary">$299</p>
+                                    <a href="ProductDetails.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0 shadow-sm">
+                                <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text text-primary">$299</p>
+                                    <a href="ProductDetails.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0 rounded-0 shadow-sm">
+                                <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text text-primary">$299</p>
+                                    <a href="ProductDetails.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
+                                        Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-nav-wrapper position-absolute bottom-0">
+                        <div class="swiper-button-prev">
+                            <i class="fa-solid fa-arrow-left-long text-primary fs-4"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next">
+                            <i class="fa-solid fa-arrow-right-long  text-primary fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container-fluid">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between col-12 col-xxl-10 mx-auto text-center text-lg-start">
@@ -218,7 +557,8 @@
                         <div class="vr"></div>
                         <a href="comingsoon.html"><img src="assets/images/pay.svg" class="img-fluid"></a>
                         <div class="vr"></div>
-                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg" class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
+                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg"
+                                class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
                     </div>
                 </div>
             </div>
@@ -231,6 +571,89 @@
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="assets/lib/animate/aso.js"></script>
     <script src="assets/js/index.js"></script>
+
+    <script>
+        var elements = document.getElementsByClassName("p-like");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener("click", function () {
+                this.classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('.minus-btn').forEach(function (button) {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                var input = this.closest('div').querySelector('input');
+                var value = parseInt(input.value);
+
+                if (value > 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+
+                input.value = value;
+            });
+        });
+        document.querySelectorAll('.plus-btn').forEach(function (button) {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                var input = this.closest('div').querySelector('input');
+                var value = parseInt(input.value);
+
+                if (value < 100) {
+                    value = value + 1;
+                } else {
+                    value = 100;
+                }
+
+                input.value = value;
+            });
+        });
+
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            direction: "horizontal",
+            pagination: {
+                el: ".swiper-pagination"
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+
+        });
+
+
+        var stars = document.getElementsByClassName('star');
+
+        for (var i = 5; i > stars.length; i--) {
+            stars[i].addEventListener('mouseover', function () {
+                this.classList.add('hover');
+            });
+
+            stars[i].addEventListener('mouseout', function () {
+                this.classList.remove('hover');
+            });
+        }
+
+
+    </script>
+
 </body>
 
 </html>

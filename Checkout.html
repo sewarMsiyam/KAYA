@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
+     <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
         <div class="container-fluid ">
             <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
                 <a class="navbar-brand me-lg-5" href="index.html"><img src="assets/images/logo.png"
@@ -122,356 +122,270 @@
 
 
 
-    <section>
-        <div class="bg-shop">
-            <div class="d-flex align-items-center h-100 w-100 py-5 bg-img-container">
-                <div class="container">
-                    <h1>Shop</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">shop </li>
-                        </ol>
-                    </nav>
+        <section class="container-fluid col-12 col-xxl-10 Support my-4">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-secondary text-opacity-50" aria-current="page">Shopping Cart</li>
+                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+            <h3 class="title-cart text-center fw-normal mt-3">Checkout</h3>
+        <div class="wizard my-5">
+            <ul class="nav nav-tabs justify-content-between border-0 position-relative wiz-doneColor" id="myTab"
+                role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row active align-items-center p-2 p-lg-3"
+                        href="ShoppingCart.html">
+                        <span class="num">1</span>
+                        <span class="tit">Shopping Cart</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row active active2 align-items-center p-2 p-lg-3"
+                        href="Checkout.html">
+                        <span class="num">2</span>
+                        <span class="tit">Checkout</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex flex-column flex-lg-row  align-items-center p-2 p-lg-3"
+                        href="Completed.html">
+                        <span class="num">3</span>
+                        <span class="tit">Completed</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="row col-12 mt-5 Shopping-cart">
+                <div class="col-12 col-lg-8 tabcontent ">
+                    <form class="mb-3">
+                        <div class="row align-items-center mb-4">
+                            <h3>Buyer Info</h3>
+                            <hr class="text-primary">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none" id="name">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="Address" class="form-label">Address</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                    id="Address">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="Phone" class="form-label">Phone no.</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                    id="Phone">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="Country" class="form-label">Country</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                    id="Country">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="City" class="form-label">City</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none" id="City">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="State" class="form-label">State</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                    id="State">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="ZipCode" class="form-label">Zip Code</label>
+                                <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                    id="ZipCode">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                                <textarea class="form-control border-outline-primary shadow-none rounded-0 "
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <input class="form-check-input shadow-none rounded-0 border-outline-primary"
+                                    type="checkbox" id="CheckPrivacy">
+                                <label class="form-check-label" for="CheckPrivacy">Save address details for next
+                                    orders</label>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-5">
+                            <div class="col cart-items">
+                                <h3>Payment Method</h3>
+                            </div>
+                            <hr class="text-primary">
+                            <ul class="nav nav-pills mb-3 PaymentMethod gap-2 justify-content-center justify-content-lg-start" id="Payment_Method" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link " id="pills-apple-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-apple" type="button" role="tab"
+                                        aria-controls="pills-apple" aria-selected="false">
+                                        <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.2887 3.84613C14.1165 2.81072 14.6782 1.4206 14.5301 0C13.3184 0.0602846 11.8397 0.79949 10.9836 1.83559C10.2149 2.72297 9.53461 4.17131 9.71204 5.53231C11.0721 5.65027 12.4312 4.85243 13.2887 3.84613Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M14.5141 5.79939C12.5387 5.6817 10.8591 6.92049 9.9157 6.92049C8.97188 6.92049 7.52725 5.85871 5.96479 5.88727C3.93118 5.91721 2.04424 7.06701 1.01226 8.89573C-1.11034 12.5541 0.45212 17.9808 2.51621 20.9603C3.51853 22.4344 4.72669 24.0575 6.3184 23.9991C7.82235 23.9401 8.41188 23.0253 10.2399 23.0253C12.0667 23.0253 12.5977 23.9991 14.1897 23.9696C15.8407 23.9401 16.8729 22.4948 17.8752 21.0192C19.0251 19.3388 19.4959 17.7164 19.5254 17.6272C19.4957 17.5977 16.3418 16.3878 16.3126 12.7599C16.2828 9.72214 18.7888 8.2771 18.9067 8.18756C17.4918 6.09477 15.2806 5.85871 14.5141 5.79939Z"
+                                                fill="#A78364" />
+                                        </svg>
+                                        Apple Pay</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-Visa-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-Visa" type="button" role="tab" aria-controls="pills-Visa"
+                                        aria-selected="true">
+                                        <svg width="36" height="22" viewBox="0 0 36 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M28.5342 8.61572C28.4191 8.94672 28.2186 9.48149 28.2316 9.45834C28.2316 9.45834 27.5123 11.4183 27.3232 11.9261H29.2158C29.1254 11.4844 28.6881 9.37749 28.6881 9.37749L28.5342 8.61572Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M0.5 0V21.2568H35.5V0H0.5ZM8.32623 15.0474L6.50423 8.15492L3.90385 6.23215H8.49869L9.68354 12.2484L11.9137 6.23239H14.3296L10.7392 15.0475H8.32623V15.0474ZM16.1062 15.0543H13.8263L15.2527 6.22523H17.5324L16.1062 15.0543ZM20.0752 15.1856C19.0519 15.1744 18.0667 14.9609 17.5349 14.715L17.8538 12.7388L18.1473 12.8793C18.897 13.2088 19.382 13.3425 20.2947 13.3425C20.9504 13.3425 21.6533 13.0713 21.6592 12.48C21.663 12.0935 21.3645 11.8168 20.476 11.3844C19.6118 10.9629 18.4651 10.2545 18.4789 8.98569C18.4927 7.26962 20.0794 6.07131 22.3334 6.07131C23.2161 6.07131 23.9256 6.26469 24.3763 6.44192L24.068 8.35585L23.8632 8.25492C23.4419 8.07562 22.9028 7.90354 22.1565 7.91577C21.2636 7.91577 20.851 8.30854 20.8505 8.67531C20.8448 9.08992 21.3341 9.36108 22.1307 9.77077C23.4464 10.4007 24.0538 11.1633 24.0458 12.1698C24.0277 14.0018 22.4711 15.1856 20.0752 15.1856ZM29.8648 15.0578C29.8648 15.0578 29.6551 14.0426 29.5872 13.7352C29.2552 13.7352 26.9286 13.7301 26.6673 13.7301C26.5787 13.9694 26.1879 15.0578 26.1879 15.0578H23.7928L27.1792 6.96608C27.4182 6.39054 27.8276 6.23423 28.3742 6.23423H30.1358L31.9808 15.0579H29.8648V15.0578Z"
+                                                fill="#A78364" />
+                                        </svg>
+                                        Visa Card
+                                    </button>
+                                </li>
+                                <li class="nav-item MasterCard" role="presentation">
+                                    <button class="nav-link" id="pills-Master-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-Master" type="button" role="tab"
+                                        aria-controls="pills-Master" aria-selected="false">
+                                        <img src="assets/images/MasterCard-primary.svg" class="img1">
+                                        <img src="assets/images/mastercard.svg" class="img2">
+                                        Master Card</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Delivery-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-Delivery" type="button" role="tab"
+                                        aria-controls="pills-Delivery" aria-selected="false">
+                                        <svg width="19" height="27" viewBox="0 0 19 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.67779 10.9922L7.38022 4.98615C7.38992 4.90533 7.37461 4.82289 7.33829 4.75685C7.30196 4.69087 7.24711 4.64676 7.18618 4.63424C6.92912 4.58149 6.73551 4.28108 6.73551 3.93549C6.7355 3.79748 6.76578 3.66426 6.82226 3.55015C6.85814 3.47785 6.86946 3.38899 6.85333 3.30513C6.83753 3.2212 6.79604 3.15011 6.73836 3.10911C6.07018 2.63144 5.35608 2.38936 4.61492 2.38936C3.86198 2.38925 3.13824 2.63829 2.46446 3.12923C2.40834 3.17003 2.36764 3.23977 2.35151 3.32186C2.33535 3.40391 2.34544 3.49124 2.37934 3.56315C2.43176 3.67379 2.45923 3.80239 2.45923 3.93488C2.45917 4.28223 2.26435 4.58285 2.00533 4.63398C1.94436 4.64606 1.88913 4.69007 1.85242 4.7562C1.81564 4.82224 1.80037 4.90513 1.81005 4.98625L2.51327 10.9922H1.65058L0.259136 1.96954C0.244164 1.87114 0.282544 1.77244 0.351128 1.73464C1.62964 1.02715 3.10879 0.65332 4.62782 0.65332C6.12018 0.65332 7.57751 1.01507 8.84237 1.69943C8.91137 1.73675 8.9505 1.83573 8.93517 1.93481L7.82038 9.16448C7.81992 9.16739 7.8196 9.17028 7.81919 9.17318L7.53876 10.9922L6.67779 10.9922Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M4.59415 5.55246C4.60023 5.55246 4.60627 5.55215 4.61223 5.55154C5.00672 5.5645 5.32486 5.99452 5.32486 6.52118C5.32483 7.05596 4.99684 7.49107 4.59379 7.49107C3.93445 7.49097 3.39792 8.20276 3.39792 9.07753C3.39787 9.84698 3.81315 10.4903 4.36177 10.634V10.9921H2.98258L2.29962 5.16105C2.66719 4.96172 2.92305 4.47898 2.92305 3.93479C2.923 3.79942 2.90772 3.66615 2.87787 3.53904C3.42737 3.18498 4.01038 3.00586 4.61396 3.00586C5.205 3.00577 5.77794 3.17856 6.3202 3.51966C6.28709 3.65262 6.26976 3.79277 6.26976 3.93539C6.26975 4.48663 6.5195 4.96257 6.88867 5.1611L6.20661 10.9921H4.82656V10.6337C5.37485 10.4896 5.78965 9.8466 5.78965 9.07752C5.78961 8.90724 5.68556 8.76921 5.55726 8.76921C5.42887 8.76911 5.32486 8.90724 5.32486 9.07752C5.32483 9.6121 4.99705 10.0471 4.59418 10.0474C4.19104 10.0474 3.86271 9.61231 3.86271 9.07752C3.86266 8.5427 4.19072 8.10763 4.59379 8.10763C5.25303 8.10758 5.78965 7.39595 5.78965 6.52116C5.78961 5.75197 5.37483 5.10905 4.82656 4.96493L4.82655 4.43641C4.82655 4.26611 4.72248 4.12818 4.59418 4.12818C4.46589 4.1281 4.36178 4.26619 4.36178 4.43649L4.36177 4.96472C3.81308 5.10842 3.39792 5.75165 3.39792 6.52116C3.39787 6.69139 3.50202 6.82947 3.63032 6.82947C3.75862 6.82942 3.86271 6.69144 3.86271 6.52116C3.86266 5.99415 4.18113 5.56411 4.576 5.55151C4.582 5.55213 4.58804 5.55246 4.59415 5.55246Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M15.5113 14.0045V13.9993V13.8072C15.5113 13.7073 15.5726 13.6261 15.6477 13.6261L16.8164 13.626V25.4578H15.6476C15.6113 25.4578 15.5771 25.4391 15.5512 25.4049C15.5253 25.3706 15.5113 25.3252 15.5113 25.2768V25.0823L15.5113 14.0045Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M18.8877 26.3473H17.4183C17.3428 26.3473 17.2815 26.266 17.2815 26.1661V25.7667L17.2815 19.5414L17.2815 12.9184C17.2815 12.8186 17.3429 12.7373 17.4183 12.7373H18.8877L18.8877 26.3473ZM18.0844 25.5955C18.1458 25.5955 18.2059 25.5629 18.249 25.5056C18.2595 25.4911 18.2692 25.4756 18.2777 25.4585C18.2861 25.4418 18.2934 25.4237 18.2991 25.4055C18.3051 25.3867 18.3096 25.3675 18.3124 25.3477C18.3156 25.3279 18.3168 25.3076 18.3168 25.2872C18.3168 25.2064 18.2922 25.1266 18.249 25.0694C18.195 24.9975 18.1147 24.965 18.0392 24.9854C18.0243 24.989 18.0098 24.995 17.9957 25.0025C17.9815 25.0104 17.9682 25.0201 17.9557 25.0308C17.9428 25.042 17.9311 25.0554 17.9202 25.0694C17.9097 25.0838 17.9 25.0993 17.8916 25.1165C17.883 25.133 17.8758 25.1507 17.8702 25.1695C17.8641 25.1882 17.8597 25.2075 17.8569 25.2273C17.8536 25.247 17.852 25.2674 17.852 25.2872C17.852 25.3076 17.8537 25.3279 17.8569 25.3477C17.8596 25.3674 17.8641 25.3868 17.8702 25.4055C17.8758 25.4236 17.8831 25.4419 17.8916 25.4585C17.9 25.4755 17.9097 25.4911 17.9202 25.5056C17.9311 25.5195 17.9428 25.5324 17.9557 25.5436C17.9682 25.5548 17.9816 25.5645 17.9957 25.572C18.0098 25.58 18.0243 25.5859 18.0392 25.5897C18.0542 25.5938 18.0695 25.5955 18.0844 25.5955Z"
+                                                fill="#A78364" />
+                                            <path
+                                                d="M14.3287 14.3103H15.0469L15.0469 24.774L13.7299 24.774C13.4653 24.774 13.2051 24.8338 12.9561 24.9517L11.4685 25.6564C11.2672 25.7516 11.0574 25.7974 10.846 25.7983L3.08503 25.7707C2.4463 25.768 1.92672 25.077 1.92672 24.2299C1.92668 23.3803 2.44757 22.6892 3.08788 22.6892C3.09274 22.6892 3.09755 22.689 3.10232 22.6886H4.11745C4.24581 22.6886 4.34991 22.5506 4.34991 22.3803C4.34984 22.21 4.24581 22.072 4.11751 22.072L2.46774 22.072C1.8282 22.072 1.30821 21.3819 1.30821 20.5337C1.30821 19.6853 1.82826 18.9953 2.46775 18.9953L2.47175 18.9952H4.69726C4.82552 18.9952 4.92968 18.8573 4.92968 18.6871C4.92965 18.5167 4.82558 18.3787 4.69728 18.3787H2.46775H2.05496C1.41551 18.3787 0.895466 17.6886 0.895466 16.8404C0.895439 15.9921 1.41552 15.3021 2.05501 15.3021L5.81004 15.302C5.93831 15.302 6.04244 15.1641 6.04244 14.9938C6.04243 14.8234 5.93834 14.6855 5.81005 14.6855L1.38519 14.6854C1.07618 14.6854 0.784918 14.5254 0.565437 14.2347C0.346319 13.9447 0.225714 13.5586 0.225714 13.1472C0.225675 12.2989 0.745787 11.6089 1.38526 11.6089H1.45644L1.46027 11.6089L1.4646 11.6089L7.72846 11.6088C7.84433 11.6088 7.94052 11.4962 7.95802 11.3489L8.2044 9.75049C10.1924 11.594 12.3299 13.2563 13.1845 13.906C13.5327 14.1704 13.9281 14.3103 14.3287 14.3103Z"
+                                                fill="#A78364" />
+                                        </svg>
+                                        On Delivery</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="Payment_MethodContent">
+                                <div class="tab-pane fade" id="pills-apple" role="tabpanel"
+                                    aria-labelledby="pills-apple-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade show active" id="pills-Visa" role="tabpanel"
+                                    aria-labelledby="pills-Visa-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="Card" class="form-label">Card No.</label>
+                                            <div class="position-relative">
+                                                <input class="form-control form-control-lg rounded-0 shadow-none"
+                                                    placeholder="1234 5678 9012 3456" id="Card" />
+                                                <div class="position-absolute top-50 end-0 translate-middle-y px-2">
+                                                    <svg width="41" height="27" viewBox="0 0 41 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0 22.8223C0 24.8092 1.61654 26.4258 3.60352 26.4258H37.3965C39.3835 26.4258 41 24.8092 41 22.8223V12.0117H0V22.8223ZM5.60547 16.8164H24.9844V19.2188H5.60547V16.8164Z"
+                                                            fill="#F1EDE7" />
+                                                        <path
+                                                            d="M37.3965 0H3.60352C1.61654 0 0 1.61654 0 3.60352V4.80469H41V3.60352C41 1.61654 39.3835 0 37.3965 0Z"
+                                                            fill="#F1EDE7" />
+                                                        <path d="M0 7.20703H41V9.60938H0V7.20703Z" fill="#F1EDE7" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="" class="form-label">Name on Card</label>
+                                            <input type="text"
+                                                class="form-control form-control-lg rounded-0 shadow-none" id="">
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="Card" class="form-label">Expiry date</label>
+                                            <input type="text"
+                                                class="form-control form-control-lg rounded-0 shadow-none"
+                                                placeholder="MM/YY" id="Card">
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="" class="form-label">CVC / CVV</label>
+                                            <input type="text"
+                                                class="form-control form-control-lg rounded-0 shadow-none" id="">
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <input class="form-check-input shadow-none rounded-0 border-outline-primary"
+                                                type="checkbox" id="CheckPrivacy">
+                                            <label class="form-check-label" for="CheckPrivacy">Save card details for next orders</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Master" role="tabpanel"
+                                    aria-labelledby="pills-Master-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="pills-Delivery" role="tabpanel"
+                                    aria-labelledby="pills-Delivery-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </div>
-
-        <div class="container-fluid col-lg-11 mb-5">
-            <div class="row justify-content-evenly mt-3 mt-lg-5">
-                <div class="col-12 col-lg"  data-aos="flip-left" data-aos-easing="linear" data-aos-duration="500">
-                    <div
-                        class="d-flex flex-lg-column align-items-center align-items-lg-start justify-content-between w-lg-100">
-                        <div class="Search-100">
-                            <label>
-                                <h4 class="tit-filter p-0">Product Search</h4>
-                            </label>
-                            <div class="position-relative">
-                                <input class="form-control shadow-none" placeholder="Search Here">
-                                <i
-                                    class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y px-2"></i>
+                <div class="col-12 col-lg ms-lg-5">
+                    <div class="border-outline-primary data-shop mt-4 p-3">
+                        <h4 class="font_sizing mb-4">Your Order Summary</h4>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="d-inline-block text-primary">1x</p>
+                                <p class="d-inline-block px-2">Product Name</p>
                             </div>
+                            <h6 class="text-primary">$100.00</h6>
                         </div>
-                        <button class="btn btn-primary rounded-0 filter-icon d-lg-none" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                            aria-controls="offcanvasExample">
-                            <i class=" fa-solid fa-filter"></i>
-                        </button>
-                    </div>
-                    <hr class="my-4">
-                    <div class="d-lg-none offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="Categories-filter">
-                                <h4 class="tit-filter">Categories</h4>
-                                <nav class="nav flex-column nav-Filter-Categories">
-                                    <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                    <a class="nav-link" href="#">Skin Care (15)</a>
-                                    <a class="nav-link" href="#">hair care (6)</a>
-                                    <a class="nav-link" href="#">body care (10)</a>
-                                    <a class="nav-link" href="#">foot care (5)</a>
-                                    <a class="nav-link" href="#">supplements (5)</a>
-                                </nav>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="d-inline-block text-primary">1x</p>
+                                <p class="d-inline-block px-2">Product Name</p>
                             </div>
-                            <div class="Filter-price">
-                                <h4 class="tit-filter">Filter by price</h4>
-                                <nav class="nav flex-column">
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                        <label class="form-check-label" for="all">All Price </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                        <label class="form-check-label" for="one">$100 - $250</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$250 - $500</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                        <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                    </div>
-                                </nav>
+                            <h6 class="text-primary">$100.00</h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="d-inline-block text-primary">1x</p>
+                                <p class="d-inline-block px-2">Product Name</p>
                             </div>
-                            <div class="Filter-Rating">
-                                <h4 class="tit-filter">Filter by Rating </h4>
-                                <nav class="nav flex-column">
-                                    <div class="form-check ">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star1">
-                                        <label class="form-check-label" for="Star1">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star2">
-                                        <label class="form-check-label" for="Star2">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star3">
-                                        <label class="form-check-label" for="Star3">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star4">
-                                        <label class="form-check-label" for="Star4">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input shadow-none rounded-0" type="checkbox"
-                                            id="Star5">
-                                        <label class="form-check-label" for="Star5">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                            <img src="assets/images/Star.svg" class="img-fluid">
-                                        </label>
-                                    </div>
-                                </nav>
-                            </div>
+                            <h6 class="text-primary">$100.00</h6>
                         </div>
-                    </div>
-
-                    <div class="border-filter d-none d-lg-block p-3 mt-3">
-                        <div class="Categories-filter">
-                            <h4 class="tit-filter">Categories</h4>
-                            <nav class="nav flex-column nav-Filter-Categories">
-                                <a class="nav-link active" aria-current="page" href="#">All (50)</a>
-                                <a class="nav-link" href="#">Skin Care (15)</a>
-                                <a class="nav-link" href="#">hair care (6)</a>
-                                <a class="nav-link" href="#">body care (10)</a>
-                                <a class="nav-link" href="#">foot care (5)</a>
-                                <a class="nav-link" href="#">supplements (5)</a>
-                            </nav>
+                        <hr class="text-primary">
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal</p>
+                            <h6 class="text-primary">$300.00</h6>
                         </div>
-                        <div class="Filter-price">
-                            <h4 class="tit-filter">Filter by price</h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="all">
-                                    <label class="form-check-label" for="all">All Price </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="one">
-                                    <label class="form-check-label" for="one">$100 - $250</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$250 - $500</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$750 - $1.000</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="tow">
-                                    <label class="form-check-label" for="tow">$1000 - $1.500</label>
-                                </div>
-                            </nav>
+                        <div class="d-flex justify-content-between">
+                            <p>Shipping</p>
+                            <h6 class="text-primary">$15.00</h6>
                         </div>
-                        <div class="Filter-Rating">
-                            <h4 class="tit-filter">Filter by Rating </h4>
-                            <nav class="nav flex-column">
-                                <div class="form-check ">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star1">
-                                    <label class="form-check-label" for="Star1">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star2">
-                                    <label class="form-check-label" for="Star2">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star3">
-                                    <label class="form-check-label" for="Star3">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star4">
-                                    <label class="form-check-label" for="Star4">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input shadow-none rounded-0" type="checkbox" id="Star5">
-                                    <label class="form-check-label" for="Star5">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                        <img src="assets/images/Star.svg" class="img-fluid">
-                                    </label>
-                                </div>
-                            </nav>
+                        <div class="d-flex justify-content-between">
+                            <p>Tax</p>
+                            <h6 class="text-primary">$10.00</h6>
                         </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-lg-9">
-                    <div
-                        class="d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-between mb-3">
-                        <p class="fs-14px m-0">Viewing <span class="fw-bold text-dark">20</span> of <span
-                                class="fw-bold text-dark">160</span> product</p>
-                        <div class="col-lg-3 d-flex align-items-center justify-content-start justify-content-lg-end">
-                            <span>Sort by: </span>
-                            <select class="form-select border-0 shadow-none w-75 bg-body"
-                                aria-label="Default select example">
-                                <option selected>Newest Items</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                        <hr class="text-primary">
+                        <div class="d-flex justify-content-between">
+                            <h5>Total</h5>
+                            <h6 class="text-primary">Total</h6>
                         </div>
-                    </div>
-                    <div class="row Product_items gy-4">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card border-0 rounded-0 " data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000">
-                                <div class="position-relative">
-                                    <img src="assets/images/indextpo.png" class="card-img-top rounded-0" alt="...">
-                                    <div class="Productspags-love-img top-0 end-0 m-3" onclick="like_red()">
-                                        <i class="fa-solid fa-heart"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body text-start px-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h5 class="card-title">Product Name </h5>
-                                        <div class="d-flex justify-content-end align-items-center">
-                                            <span>4.5 </span> <img src="assets/images/Star.svg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <p class="card-text text-primary">$299</p>
-                                </div>
-                                <a href="comingsoon.html" class="btn btn-primary rounded-0 lh-lg w-100">Add to
-                                    Cart</a>
-                            </div>
-                        </div>
+                        <hr class="text-primary">
+                        <a href="Checkout2.html" class="btn btn-primary rounded-0 shadow-none w-100 lh-lg">Checkout</a>
+                        <p class="text-center mt-3 "><a href="sh" class="text-center text-primary text-decoration-none">Back to Cart</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
 
     <footer>
         <div class="container-fluid">
@@ -579,24 +493,13 @@
             </div>
         </div>
     </footer>
+
+
+
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="assets/lib/animate/aso.js"></script>
     <script src="assets/js/index.js"></script>
-    <script>
-
-
-        var elements = document.getElementsByClassName("Productspags-love-img");
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", function () {
-                this.classList.toggle('active');
-            });
-        }
-
-
-
-
-    </script>
 </body>
 
 </html>

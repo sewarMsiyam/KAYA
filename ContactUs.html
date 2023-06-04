@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
+       <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
         <div class="container-fluid ">
             <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
                 <a class="navbar-brand me-lg-5" href="index.html"><img src="assets/images/logo.png"
@@ -34,7 +34,7 @@
                                     fill="#424241" />
                             </svg>
                         </a>
-                        <a class="nav-link mx-2" href="comingsoon.html">
+                        <a class="nav-link mx-2" href="ShoppingCart.html">
                             <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -54,7 +54,15 @@
                 </div>
                 <div class="d-flex flex-lg-row justify-content-lg-between align-items-center offcanvas offcanvas-end w-75"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center">
+                    <button type="button" class="btn shadow-none d-lg-none position-absolute start-0 p-3 bg-body"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-circle-xmark text-end text-primary fs-3"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center py-5 py-lg-0">
+                        <li class="nav-item mb-3 d-lg-none">
+                            <img src="assets/images/logo.png" class="img-fluid" />
+                            <hr>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -82,7 +90,7 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a class="nav-link1 mx-3" href="comingsoon.html">
+                            <a class="nav-link1 mx-3" href="ShoppingCart.html">
                                 <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -90,20 +98,15 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a href="profile.html" class="nav-link1 mx-3" >
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <circle cx="22.5" cy="22.5" r="22.5" fill="url(#pattern0)" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_1_3012"
-                                                transform="matrix(0.00444444 0 0 0.00666585 -0.0116279 -0.110374)" />
-                                        </pattern>
-                                        <image id="image0_1_3012" width="225" height="225"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXFxcX////CwsLGxsb7+/vT09PJycn19fXq6urb29ve3t7w8PDOzs7n5+f5+fnt7e30nlkBAAAFHUlEQVR4nO2dC5qqMAyFMTwUBdz/bq+VYYrKKJCkOfXmXwHna5uTpA+KwnEcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3EcA2iO9cdIc5PUdO257y+BU39u66b4HplE3fk6VIcnqmNfl1+gksr6+iIucjl3WYukor7+re6Hoe1y1UhNO3zUd+fUFRmKpOa0Tt6dY5ubRCrOG/QFLk1WGmnt/JxzykcjdZ/jyxJDLlOV2l36AtcsJJb9boG3YcR3DuqODIE3ztYKPkDdmwRmpUToUaSaq++AvRgZMWbOpbQW8hdCAm8ZDugoikzREdCJ2okJPBx6azFLNOwoOgcxojJ98JkaTSJxMpklKrCAKhZGI0drTY/wU5lXoJYibannV9NYy4oozNEAkPHTjop+DTDxVGkIgYJNoyQQJtiIW+EMjGAjm649AjGIaqswcEFQKJ2QPlJbqytki6ZXAAZRJ52J2McaUowzAfs+uFzrYhnzaapphiPWdaJWShqxjqa6kTTQ205TVbsfMa6htL0iYOsXpJrQjHSmCkv1QGPtiHqlYcQ21Gj7fcDU8xOEUuNgSltPzexh+HqFlanCBHZ4OLhCV+gK/3OF6vWvucLv98MUOY2pwu/PS/+D2qJU7pYGbOvDFDW+bbON9p3o3oRxn0bfLgZTgSn6pSfrtr56qLHemtHPTK2319SzGvtjQ9qeb39WgS66Cm073nd0U1PzDdJCO3Gzn6TKpl9Zq7ujGWsQhlA3NwWIMwG9zM08Y/tBrR9VWeczv5CSQuuUNKIUTk23ZJ5RKfVhjnkXotfWIlgX2BSCDYbZR+QTcLhb3dKZDUY2M0d4KWItwhHRah/zsrOgKw4wycwjcgEVcgQDQo23CqSiWEJkFAfod2oE1uIFdA1OsCPqFXYNTjCfb8Ez+iX2x5sKLlVbhtqdDcar9ZevhnbZxoBUD35k23t0d304LYs1ELVbnfFaZ/REJJX9niP8Q19moZGo3m8XR/yBvOnjFfsXcI2c8ZuNo7WMP5HQh6yRGrlmFOJTnyTcT+zRlqPUBI2gTVWNUzUna1ERgecgF4GpNBQ38jGqxVLzQA1A31Rrhk6Yz9QEh/WND0GnuG9huhiTXJkxfAizTHLr6cbJKN6UCU6x/2DTRE1xEeEXi3O0ZUqBN4nJRzHhFB1JPlFTBZlI2kQ8zc3KJ1Le8DIRmFJiknuVS6RK4Ej/JtBfJErDSzOBiY4wJHX6Z1I4v1GUmdCPNirnLLeg3oJLcbX5PcpHNbRvOa1A956QmRPOUXVF+zkaUJynpkYR0bOMJH2nNej1pqyV/aKkz9jr5yj5vrXXz1F5SQLACiMapmierj2ikLyleKdlA/I/2oFxiglxx9B+mHwz0lf34IZQfhDRhlD6bhvgEAoPYooHkTczSIZTLC+cEExsoNKZiGBiY9cCfo/Y/SjIOBMQizWWTe73CMUasJx7jlD+DdKdWUKoY4PRYFtGpO0G1Lx4RaadgTtJhf4fiGqGIwKWCGuGIwKWqP+7IxYCzygjR9IAO5pC7Da9g70TBVpWRNgFBlgT8RV2WxHbKwJMv4BOaEaYaU2K16yZMN/qgV+G7IWIvwyZCxHeDQMsR8wg0DBDDXB5H2EV+hkEGmaoySHQsEJNFoGGFWrAq98JRhUMX1iMMMqLLEIpK5jCbd4vw9nSt/72lewXiN6jmdjfq8Hdknlk92ZwJnbIMMRM7JBhiFlUFoHd1UWaP1QKsPsHA5mkNB+Smn9JqV3wskatnQAAAABJRU5ErkJggg==" />
-                                    </defs>
-                                </svg>
+                            <a href="profile.html" class="nav-link1 mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="profile.html" class="nav-link mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
                             </a>
                         </li>
                     </ul>
@@ -117,13 +120,121 @@
     </header>
 
 
-    <div class="d-flex justify-content-center align-items-center py-5 my-5">
-        <img src="assets/images/comingSoon.png" class=" img-fluid" style="height: 55vh;">
-    </div>
 
 
-    
- <footer>
+
+
+    <section>
+        <div class="container-fluid col-11 col-xxl-10  my-5">
+            <div class="row gap-3">
+                <div class="col-12 col-lg me-4  m-lg-0" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="bg-light-primary h-100 p-3 p-lg-4">
+                        <h3 class="tit-Contact">Contact Us !</h3>
+                        <p class="suptit-Contact mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, </p>
+                        <div class="d-flex contact ">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.6421 8.14793L15.8752 12.5621C14.7838 13.3756 13.2539 13.3756 12.1626 12.5621L6.34616 8.14793M7.60845 1H20.3551C22.193 1.0196 23.9423 1.75826 25.1956 3.04395C26.4488 4.32964 27.0967 6.05013 26.9883 7.80473V16.1953C27.0967 17.9499 26.4488 19.6704 25.1956 20.9561C23.9423 22.2417 22.193 22.9804 20.3551 23H7.60845C3.66071 23 1 19.9467 1 16.1953V7.80473C1 4.05325 3.66071 1 7.60845 1Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="px-3">
+                                <h4>E-mail:</h4>
+                                <a href="mailto:kaya@support.com" class="text-decoration-none">kaya@support.com</a>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="d-flex contact">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.63175 4.16049C2.09306 3.42259 4.63471 0.738642 6.44846 0.819667C6.99064 0.863073 7.46991 1.17994 7.85932 1.54744C8.75347 2.39097 11.3131 5.58132 11.4584 6.25267C11.8118 7.89921 9.78091 8.84836 10.4025 10.5079C11.9871 14.2539 14.7174 16.8915 18.5966 18.4209C20.313 19.0213 21.2955 17.0594 22.9999 17.4023C23.6933 17.5426 26.9973 20.0153 27.8705 20.8791C28.2494 21.2538 28.5789 21.7183 28.6239 22.242C28.6913 24.0868 25.7407 26.5769 25.1656 26.8952C23.8087 27.8328 22.0384 27.8168 19.8801 26.8474C13.8577 24.4268 4.23331 15.3043 1.68118 9.2665C0.704658 7.19314 0.63726 5.47136 1.63175 4.16049Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="px-3">
+                                <h4>Phone:</h4>
+                                <a href="tel:123-456-7890" class="text-decoration-none">056 4455 5458</a>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="d-flex contact">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <svg width="27" height="30" viewBox="0 0 27 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.71198 12.8951C1.73479 6.40852 7.19626 1.16797 13.9105 1.19001C20.6248 1.21205 26.0493 6.48833 26.0265 12.9749V13.1079C25.9439 17.3244 23.5069 21.2217 20.5192 24.2677C18.8106 25.9818 16.9025 27.4994 14.833 28.7901C14.2796 29.2525 13.4588 29.2525 12.9055 28.7901C9.82033 26.8501 7.11262 24.4008 4.90618 21.5542C2.93961 19.0719 1.82307 16.0591 1.71198 12.935L1.71198 12.8951Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <ellipse cx="13.8692" cy="13.1212" rx="3.89638" ry="3.76425" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="px-3">
+                                <h4>Address:</h4>
+                                <a class="text-decoration-none">255 St, Jordan</a>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="d-flex flex-column flex-lg-row flex-wrap align-items-lg-end contact">
+                            <h4 class="m-0">Working Hours:</h4>
+                            <a class="text-decoration-none px-lg-3">Saturday - Thursday</a>
+                            <a class="text-decoration-none text-dark text-opacity-50">10 Am - 09 Pm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="bg-light-primary tabcontent d-flex justify-content-center align-items-center h-100 p-3 p-lg-5">
+                        <form class="w-100 Contact-us">
+                            <div class="row mb-4">
+                                <div class="col-12 col-lg-6">
+                                    <label for="InputFname" class="form-label">First Name</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                        id="InputFname">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="InputLname" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                        id="InputLname">
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-12 col-lg-6">
+                                    <label for="InputEmail" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control form-control-lg rounded-0 shadow-none"
+                                        id="InputEmail">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <label for="InputSubject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control form-control-lg rounded-0 shadow-none"
+                                        id="InputSubject">
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                                <textarea class="form-control shadow-none rounded-0 " id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg btn-primary rounded-0 w-75 mx-auto fs-6">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
         <div class="container-fluid">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between col-12 col-xxl-10 mx-auto text-center text-lg-start">
@@ -222,7 +333,8 @@
                         <div class="vr"></div>
                         <a href="comingsoon.html"><img src="assets/images/pay.svg" class="img-fluid"></a>
                         <div class="vr"></div>
-                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg" class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
+                        <a href="comingsoon.html" class="text-decoration-none"><img src="assets/images/onDelivery.svg"
+                                class="img-fluid"><span class="px-2 text-white fs-14px">on Delivery</span></a>
                     </div>
                 </div>
             </div>

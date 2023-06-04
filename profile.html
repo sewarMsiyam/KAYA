@@ -34,7 +34,7 @@
                                     fill="#424241" />
                             </svg>
                         </a>
-                        <a class="nav-link mx-2" href="comingsoon.html">
+                        <a class="nav-link mx-2" href="ShoppingCart.html">
                             <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -54,7 +54,15 @@
                 </div>
                 <div class="d-flex flex-lg-row justify-content-lg-between align-items-center offcanvas offcanvas-end w-75"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center">
+                    <button type="button" class="btn shadow-none d-lg-none position-absolute start-0 p-3 bg-body"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-circle-xmark text-end text-primary fs-3"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto w-100 justify-content-between align-items-center py-5 py-lg-0">
+                        <li class="nav-item mb-3 d-lg-none">
+                            <img src="assets/images/logo.png" class="img-fluid" />
+                            <hr>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -82,7 +90,7 @@
                                         fill="#424241" />
                                 </svg>
                             </a>
-                            <a class="nav-link1 mx-3" href="comingsoon.html">
+                            <a class="nav-link1 mx-3" href="ShoppingCart.html">
                                 <svg class="" width="22" height="26" viewBox="0 0 22 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -91,19 +99,14 @@
                                 </svg>
                             </a>
                             <a href="profile.html" class="nav-link1 mx-3">
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <circle cx="22.5" cy="22.5" r="22.5" fill="url(#pattern0)" />
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
-                                            height="1">
-                                            <use xlink:href="#image0_1_3012"
-                                                transform="matrix(0.00444444 0 0 0.00666585 -0.0116279 -0.110374)" />
-                                        </pattern>
-                                        <image id="image0_1_3012" width="225" height="225"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEXFxcX////CwsLGxsb7+/vT09PJycn19fXq6urb29ve3t7w8PDOzs7n5+f5+fnt7e30nlkBAAAFHUlEQVR4nO2dC5qqMAyFMTwUBdz/bq+VYYrKKJCkOfXmXwHna5uTpA+KwnEcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3EcA2iO9cdIc5PUdO257y+BU39u66b4HplE3fk6VIcnqmNfl1+gksr6+iIucjl3WYukor7+re6Hoe1y1UhNO3zUd+fUFRmKpOa0Tt6dY5ubRCrOG/QFLk1WGmnt/JxzykcjdZ/jyxJDLlOV2l36AtcsJJb9boG3YcR3DuqODIE3ztYKPkDdmwRmpUToUaSaq++AvRgZMWbOpbQW8hdCAm8ZDugoikzREdCJ2okJPBx6azFLNOwoOgcxojJ98JkaTSJxMpklKrCAKhZGI0drTY/wU5lXoJYibannV9NYy4oozNEAkPHTjop+DTDxVGkIgYJNoyQQJtiIW+EMjGAjm649AjGIaqswcEFQKJ2QPlJbqytki6ZXAAZRJ52J2McaUowzAfs+uFzrYhnzaapphiPWdaJWShqxjqa6kTTQ205TVbsfMa6htL0iYOsXpJrQjHSmCkv1QGPtiHqlYcQ21Gj7fcDU8xOEUuNgSltPzexh+HqFlanCBHZ4OLhCV+gK/3OF6vWvucLv98MUOY2pwu/PS/+D2qJU7pYGbOvDFDW+bbON9p3o3oRxn0bfLgZTgSn6pSfrtr56qLHemtHPTK2319SzGvtjQ9qeb39WgS66Cm073nd0U1PzDdJCO3Gzn6TKpl9Zq7ujGWsQhlA3NwWIMwG9zM08Y/tBrR9VWeczv5CSQuuUNKIUTk23ZJ5RKfVhjnkXotfWIlgX2BSCDYbZR+QTcLhb3dKZDUY2M0d4KWItwhHRah/zsrOgKw4wycwjcgEVcgQDQo23CqSiWEJkFAfod2oE1uIFdA1OsCPqFXYNTjCfb8Ez+iX2x5sKLlVbhtqdDcar9ZevhnbZxoBUD35k23t0d304LYs1ELVbnfFaZ/REJJX9niP8Q19moZGo3m8XR/yBvOnjFfsXcI2c8ZuNo7WMP5HQh6yRGrlmFOJTnyTcT+zRlqPUBI2gTVWNUzUna1ERgecgF4GpNBQ38jGqxVLzQA1A31Rrhk6Yz9QEh/WND0GnuG9huhiTXJkxfAizTHLr6cbJKN6UCU6x/2DTRE1xEeEXi3O0ZUqBN4nJRzHhFB1JPlFTBZlI2kQ8zc3KJ1Le8DIRmFJiknuVS6RK4Ej/JtBfJErDSzOBiY4wJHX6Z1I4v1GUmdCPNirnLLeg3oJLcbX5PcpHNbRvOa1A956QmRPOUXVF+zkaUJynpkYR0bOMJH2nNej1pqyV/aKkz9jr5yj5vrXXz1F5SQLACiMapmierj2ikLyleKdlA/I/2oFxiglxx9B+mHwz0lf34IZQfhDRhlD6bhvgEAoPYooHkTczSIZTLC+cEExsoNKZiGBiY9cCfo/Y/SjIOBMQizWWTe73CMUasJx7jlD+DdKdWUKoY4PRYFtGpO0G1Lx4RaadgTtJhf4fiGqGIwKWCGuGIwKWqP+7IxYCzygjR9IAO5pC7Da9g70TBVpWRNgFBlgT8RV2WxHbKwJMv4BOaEaYaU2K16yZMN/qgV+G7IWIvwyZCxHeDQMsR8wg0DBDDXB5H2EV+hkEGmaoySHQsEJNFoGGFWrAq98JRhUMX1iMMMqLLEIpK5jCbd4vw9nSt/72lewXiN6jmdjfq8Hdknlk92ZwJnbIMMRM7JBhiFlUFoHd1UWaP1QKsPsHA5mkNB+Smn9JqV3wskatnQAAAABJRU5ErkJggg==" />
-                                    </defs>
-                                </svg>
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="profile.html" class="nav-link mx-3">
+                                <img src="assets/images/user.svg" class="rounded-circle border" width="45"
+                                    height="45" />
                             </a>
                         </li>
                     </ul>
@@ -118,10 +121,7 @@
 
 
 
-
     <section class="tabs container-fluid col-11 col-xxl-10 Support my-5">
-        <button id="warning-btn" class="btn btn-warning">عرض التحذير</button>
-
         <div class="row">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -170,9 +170,10 @@
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="tablinks dropdown-item" onclick="openprof(event, 'Logout')">
+                                    <a href="index.html" class="tablinks dropdown-item"
+                                        onclick="openprof(event, 'Logout')">
                                         Logout
-                                    </button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -196,9 +197,9 @@
                             <button class="tablinks nav-link" onclick="openprof(event, 'Change_Password')">
                                 Change Password
                             </button>
-                            <button class="tablinks nav-link" onclick="openprof(event, 'Logout')">
+                            <a href="index.html" class="tablinks nav-link" onclick="openprof(event, 'Logout')">
                                 Logout
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -265,8 +266,529 @@
                             </div>
                         </form>
                     </div>
-                    <div id="My_Orders" class="tabcontent  h-100">
-                        My_Orders
+                    <div id="My_Orders" class="tabcontent My_Orders h-100">
+                        <nav>
+                            <div class="nav nav-tabs justify-content-center justify-content-lg-start" id="nav-tab"
+                                role="tablist">
+                                <button class="nav-link active" id="nav-AllOrders-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-AllOrders" type="button" role="tab"
+                                    aria-controls="nav-AllOrders" aria-selected="true">All Orders</button>
+                                <button class="nav-link" id="nav-Processing-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-Processing" type="button" role="tab"
+                                    aria-controls="nav-Processing" aria-selected="false">Processing</button>
+                                <button class="nav-link" id="nav-Delivered-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-Delivered" type="button" role="tab"
+                                    aria-controls="nav-Delivered" aria-selected="false">Delivered</button>
+                                <button class="nav-link" id="nav-Cancelled-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-Cancelled" type="button" role="tab"
+                                    aria-controls="nav-Cancelled" aria-selected="false">Cancelled</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content mt-4" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-AllOrders" role="tabpanel"
+                                aria-labelledby="nav-AllOrders-tab" tabindex="0">
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Process"><span class="Cr-Process"></span> In
+                                                        Process</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal" data-bs-target="#TrackModal">Track
+                                                            Order</button>
+                                                        <div class="dropdown px-2">
+                                                            <a class="" href="#" role="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <i
+                                                                    class="fa-solid fa-ellipsis fa-rotate-90 text-dark"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                                        data-bs-target="#OrderDetailsModal">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.4774 9.81649H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M8.4774 7.02547H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M5.50073 4.2408H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path fill-rule="evenodd"
+                                                                                clip-rule="evenodd"
+                                                                                d="M8.60533 0.833984C8.60533 0.833984 3.48733 0.836651 3.47933 0.836651C1.63933 0.847984 0.5 2.05865 0.5 3.90532V10.036C0.5 11.892 1.648 13.1073 3.504 13.1073C3.504 13.1073 8.62133 13.1053 8.63 13.1053C10.47 13.094 11.61 11.8827 11.61 10.036V3.90532C11.61 2.04932 10.4613 0.833984 8.60533 0.833984Z"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Order Details</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">
+                                                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.39787 4.59692L4.60254 7.39226"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M7.39825 7.39395L4.60059 4.5957"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path fill-rule="evenodd"
+                                                                                clip-rule="evenodd"
+                                                                                d="M8.52849 0.604248H3.47158C1.70933 0.604248 0.604492 1.852 0.604492 3.61775V8.38242C0.604492 10.1482 1.70408 11.3959 3.47158 11.3959H8.52791C10.296 11.3959 11.3962 10.1482 11.3962 8.38242V3.61775C11.3962 1.852 10.296 0.604248 8.52849 0.604248Z"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Cancel Order</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Cancel</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Cancel</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Delivered"><span class="Cr-Delivered"></span>
+                                                        Delivered</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#OrderDetailsModal">Order Details</button>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end"><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end">
+                                                    <button
+                                                        class="btn btn-outline-primary border-0 rounded-0 shadow-none m-1"></button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Cancelled"><span class="Cr-Cancelled"></span>
+                                                        Cancelled</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#OrderDetailsModal">Order Details</button>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end"><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end">
+                                                    <button
+                                                        class="btn btn-outline-primary border-0 rounded-0 shadow-none m-1"></button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="nav-Processing" role="tabpanel"
+                                aria-labelledby="nav-Processing-tab" tabindex="0">
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Process"><span class="Cr-Process"></span> In
+                                                        Process</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal" data-bs-target="#TrackModal">Track
+                                                            Order</button>
+                                                        <div class="dropdown px-2">
+                                                            <a class="" href="#" role="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <i
+                                                                    class="fa-solid fa-ellipsis fa-rotate-90 text-dark"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                                        data-bs-target="#OrderDetailsModal">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.4774 9.81649H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M8.4774 7.02547H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M5.50073 4.2408H3.66406"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path fill-rule="evenodd"
+                                                                                clip-rule="evenodd"
+                                                                                d="M8.60533 0.833984C8.60533 0.833984 3.48733 0.836651 3.47933 0.836651C1.63933 0.847984 0.5 2.05865 0.5 3.90532V10.036C0.5 11.892 1.648 13.1073 3.504 13.1073C3.504 13.1073 8.62133 13.1053 8.63 13.1053C10.47 13.094 11.61 11.8827 11.61 10.036V3.90532C11.61 2.04932 10.4613 0.833984 8.60533 0.833984Z"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Order Details</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">
+                                                                        <svg width="12" height="12" viewBox="0 0 12 12"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M7.39787 4.59692L4.60254 7.39226"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path d="M7.39825 7.39395L4.60059 4.5957"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path fill-rule="evenodd"
+                                                                                clip-rule="evenodd"
+                                                                                d="M8.52849 0.604248H3.47158C1.70933 0.604248 0.604492 1.852 0.604492 3.61775V8.38242C0.604492 10.1482 1.70408 11.3959 3.47158 11.3959H8.52791C10.296 11.3959 11.3962 10.1482 11.3962 8.38242V3.61775C11.3962 1.852 10.296 0.604248 8.52849 0.604248Z"
+                                                                                stroke="#333333" stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg>
+                                                                        Cancel Order</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Cancel</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Cancel</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Delivered" role="tabpanel"
+                                aria-labelledby="nav-Delivered-tab" tabindex="0">
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Delivered"><span class="Cr-Delivered"></span>
+                                                        Delivered</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#OrderDetailsModal">Order Details</button>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end"><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end">
+                                                    <button
+                                                        class="btn btn-outline-primary border-0 rounded-0 shadow-none m-1"></button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-Cancelled" role="tabpanel"
+                                aria-labelledby="nav-Cancelled-tab" tabindex="0">
+                                <div class="table-responsive mb-4">
+                                    <table class="table align-middle table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <p>Order Id.</p>
+                                                    <p class="text-primary">#548548488</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Date</p>
+                                                    <p class="text-primary">August 28,2022 </p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Total</p>
+                                                    <p class="text-primary">$198.00</p>
+                                                </th>
+                                                <th scope="col">
+                                                    <p>Status</p>
+                                                    <p class="text-primary Cancelled"><span class="Cr-Cancelled"></span>
+                                                        Cancelled</p>
+                                                </th>
+                                                <th scope="col ">
+                                                    <div class="d-flex align-items-center justify-content-end">
+                                                        <button class="btn-primary btn-hover-login rounded-0"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#OrderDetailsModal">Order Details</button>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end"><button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <img src="assets/images/1.png" class="" width="100" alt="...">
+                                                </th>
+                                                <td>Product Name</td>
+                                                <td>
+                                                    <p class="m-0 text-primary">$100.00</p>
+                                                </td>
+                                                <td>Qty:1</td>
+                                                <td class="text-end">
+                                                    <button
+                                                        class="btn btn-outline-primary border-0 rounded-0 shadow-none m-1"></button>
+                                                    <button
+                                                        class="btn btn-outline-primary rounded-0 shadow-none m-1">Buy
+                                                        Again</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="Payment_Methods" class="tabcontent h-100">
                         <div class="row p-lg-4 border-outline-primary p-3 h-100 align-content-start">
@@ -284,7 +806,7 @@
                                             <p class="mb-2">09-2024</p>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="daleteCard-btn">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -313,7 +835,7 @@
                                             <p class="mb-2">09-2024</p>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="daleteCard-btn">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -342,7 +864,7 @@
                                             <p class="mb-2">09-2024</p>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="daleteCard-btn">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -704,6 +1226,139 @@
         </div>
     </footer>
 
+
+
+    <!-- Track Order Modal -->
+    <div class="modal fade" id="TrackModal" tabindex="-1" aria-labelledby="TrackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-light-primary p-35px text-center">
+                <p class="text-primary fs-3"><b>Track Order no.</b> #548548488</p>
+                <p class="text-dark fs-6"><span class="text-dark text-opacity-50 ps-2">Estimated delivery: </span>
+                    Sep.10.2022 5:00
+                    PM</p>
+                <div class="d-flex justify-content-between align-items-center position-relative svg-delivey-order mt-4">
+                    <span class="svg-cart">
+                        <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28.359 28.8621L26.7962 9.1671C26.6992 7.89814 25.6256 6.90454 24.3532 6.90454H21.2658V11.4789C21.2658 12.0454 20.8073 12.504 20.2408 12.504C19.675 12.504 19.2157 12.0454 19.2157 11.4789V6.90454H9.78547V11.4789C9.78547 12.0454 9.32623 12.504 8.76042 12.504C8.19393 12.504 7.73537 12.0454 7.73537 11.4789V6.90454H4.64799C3.37562 6.90454 2.30204 7.89814 2.20503 9.16437L0.641517 28.8648C0.52059 30.4427 1.06794 32.013 2.14283 33.1733C3.21778 34.3336 4.74164 34.9999 6.32362 34.9999H22.6776C24.2596 34.9999 25.7835 34.3336 26.8584 33.1733C27.9333 32.0129 28.4807 30.4426 28.359 28.8621ZM19.1187 18.8324L13.8172 24.1339C13.617 24.3341 13.3546 24.4346 13.0922 24.4346C12.8298 24.4346 12.5674 24.3341 12.3672 24.1339L9.88254 21.6492C9.48209 21.2488 9.48209 20.6003 9.88254 20.1998C10.283 19.7994 10.9322 19.7994 11.332 20.1998L13.0923 21.9595L17.6694 17.3824C18.0691 16.9826 18.7183 16.9826 19.1188 17.3824C19.5192 17.7828 19.5192 18.432 19.1187 18.8324Z"
+                                fill="#A78364" />
+                            <path
+                                d="M14.5005 0C10.7701 0 7.73535 3.03543 7.73535 6.76587V6.90457H9.78545V6.76587C9.78545 4.16568 11.9004 2.05003 14.5006 2.05003C17.1008 2.05003 19.2158 4.16568 19.2158 6.76587V6.90457H21.2658V6.76587C21.2657 3.03543 18.231 0 14.5005 0Z"
+                                fill="#A78364" />
+                        </svg>
+                    </span>
+                    <span class="svg-buss">
+                        <svg width="45" height="27" viewBox="0 0 45 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M32.0801 0.265045C35.9816 1.17039 37.474 3.45177 39.3451 6.5918H32.0801V0.265045ZM9.27933 6.85547C10.0432 6.85547 10.5977 7.2242 10.5977 8.08594C10.5977 8.81275 10.0096 9.40224 9.2831 9.4043H1.31836C0.590172 9.4043 0 9.99481 0 10.7227C0 11.4508 0.590172 12.041 1.31836 12.041H13.1836C13.9186 12.041 14.5071 12.6308 14.5071 13.3594C14.5071 14.0876 13.9169 14.6777 13.1887 14.6777H1.31836C0.590172 14.6777 0 15.2679 0 15.9961C0 16.7243 0.590172 17.3145 1.31836 17.3145H4.21875V21.2695C4.21875 21.9977 4.80892 22.5879 5.53711 22.5879H8.18722C8.65963 24.9149 10.7158 26.6309 13.1396 26.6309C15.5635 26.6309 17.6197 24.9149 18.0921 22.5879H31.4782C31.9506 24.9149 34.0068 26.6309 36.4307 26.6309C38.8545 26.6309 40.9107 24.9149 41.3831 22.5879H43.6816C44.4098 22.5879 45 21.9977 45 21.2695V13.3594C45 9.49116 40.92 9.23435 40.9162 9.22852H30.7617C30.0335 9.22852 29.4434 8.63834 29.4434 7.91016V0H5.53711C4.80892 0 4.21875 0.590172 4.21875 1.31836V4.21875H2.63672C1.90853 4.21875 1.31836 4.80892 1.31836 5.53711C1.31836 6.2653 1.90853 6.85547 2.63672 6.85547H9.27933ZM38.1397 19.8681C39.0835 20.8119 39.0835 22.3428 38.1397 23.2866C36.6216 24.8047 34.0137 23.7246 34.0137 21.5771C34.0137 19.43 36.6216 18.3499 38.1397 19.8681ZM14.8487 19.8681C15.7925 20.8119 15.7925 22.3428 14.8487 23.2866C13.3305 24.8047 10.7227 23.7246 10.7227 21.5771C10.7227 19.43 13.3305 18.3499 14.8487 19.8681Z"
+                                fill="#FBBB00" />
+                        </svg>
+                    </span>
+                    <span class="svg-home">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M32.1136 14.3534C32.1128 14.3527 32.112 14.3519 32.1113 14.3511L18.6485 0.890259C18.0747 0.316223 17.3117 0 16.5002 0C15.6887 0 14.9257 0.315971 14.3516 0.890007L0.895923 14.3441C0.891391 14.3486 0.886858 14.3534 0.882326 14.3579C-0.296078 15.543 -0.294063 17.4658 0.888117 18.6479C1.42822 19.1881 2.14156 19.5011 2.90425 19.5338C2.93522 19.5368 2.96644 19.5384 2.99791 19.5384H3.53449V29.4448C3.53449 31.405 5.12962 33 7.0906 33H12.3577C12.8915 33 13.3246 32.5672 13.3246 32.0332V24.2666C13.3246 23.3721 14.0522 22.6444 14.9469 22.6444H18.0535C18.9482 22.6444 19.6759 23.3721 19.6759 24.2666V32.0332C19.6759 32.5672 20.1087 33 20.6427 33H25.9098C27.8708 33 29.4659 31.405 29.4659 29.4448V19.5384H29.9635C30.7748 19.5384 31.5377 19.2224 32.112 18.6484C33.2955 17.4643 33.296 15.5382 32.1136 14.3534Z"
+                                fill="#CDCBCB" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="modal fade" id="OrderDetailsModal" tabindex="-1" aria-labelledby="OrderDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-4">
+                <i class="fa-solid fa-circle-xmark text-end text-primary fs-3 d-lg-none" data-bs-dismiss="modal"></i>
+                <p class="text-primary"><b class="fs-3 pe-4">Order ID</b> #548548488</p>
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
+                    <p><span class="text-dark text-opacity-50">Date:</span> <span class="text-primary">August
+                            28,2022</span></p>
+                    <p><span class="text-dark text-opacity-50">Total:</span> <span class="text-primary">$198.00 </span>
+                    </p>
+                    <p><span class="text-dark text-opacity-50">Status:</span> <span class="text-primary">In
+                            Process</span></p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="assets/images/1.png" class="rounded-2 border" width="65">
+                        <span class="mx-3">Product Name</span>
+                    </div>
+                    <div>
+                        <p class="text-primary pe-2 m-0">$100.00</p>
+                        <p class="m-0 text-end">Qty:1</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="assets/images/1.png" class="rounded-2 border" width="65">
+                        <span class="mx-3">Product Name</span>
+                    </div>
+                    <div>
+                        <p class="text-primary pe-2 m-0">$100.00</p>
+                        <p class="m-0 text-end">Qty:1</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <b class="fs-5">Payment Method</b>
+                        <div class="d-flex align-items-center p-2 p-lg-4 border-outline-primary my-3">
+                            <div class="bg-light-primary p-2 py-3 py-lg-4">
+                                <img src="assets/images/C_visa.svg" class="img-fluid">
+                            </div>
+                            <div class="mx-3">
+                                <p class="mb-2">XXXXXXXXXXX6588</p>
+                                <p class="mb-2">Heba Ahmed </p>
+                                <p class="mb-2">09-2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <b class="fs-5">Payment Method</b>
+                        <div class="p-2 border-outline-primary my-3">
+                            <h5 class="mb-2">Address No.1</h5>
+                            <p class="mb-2">8948, St </p>
+                            <p class="mb-2">Miami, Folirda 5458-545</p>
+                            <p class="mb-2">United State</p>
+                        </div>
+                    </div>
+                </div>
+                <b class="fs-5">Order Summary</b>
+                <div class="border-outline-primary p-4 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <p>Subtotal</p>
+                        <p class="text-peimary">$300.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Shipping</p>
+                        <p class="text-peimary">$15.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Total</p>
+                        <p class="text-peimary">$10.00</p>
+                    </div>
+                    <hr class="m-2">
+                    <div class="d-flex justify-content-between">
+                        <p>Total</p>
+                        <p class="text-peimary">$325.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -758,10 +1413,10 @@
 
 
 
-        document.getElementById('warning-btn').onclick = function () {
+        document.querySelector('.daleteCard-btn').onclick = function () {
             Swal.fire({
                 iconHtml: '<img src="assets/images/warning_icon.png" class="custom-icon border-0">',
-                title: 'Are you sure to cancel the order?',
+                title: 'Are you sure to delete payment card?',
                 showCancelButton: true,
                 cancelButtonText: 'No',
                 confirmButtonText: 'Yes',
@@ -774,7 +1429,19 @@
 
 
 
-
+        document.querySelector('.address-btn').onclick = function () {
+            Swal.fire({
+                iconHtml: '<img src="assets/images/warning_icon.png" class="custom-icon border-0">',
+                title: 'Are you sure to delete payment card?',
+                showCancelButton: true,
+                cancelButtonText: 'No',
+                confirmButtonText: 'Yes',
+                customClass: {
+                    confirmButton: 'btn-primary shadow-none rounded-0',
+                    cancelButton: 'btn-outline-primary shadow-none rounded-0'
+                }
+            });
+        };
 
     </script>
 </body>
