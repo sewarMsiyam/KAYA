@@ -23,6 +23,11 @@ html {
   background-color: var(--bg_body);
   color: var(--text-black);
 }
+@media (min-width: 1993px) {
+  .container-fluid {
+    max-width: 1993px;
+  }
+}
 
 .bg-body {
   background-color: var(--bg_body) !important;
@@ -342,7 +347,7 @@ header .nav-item:hover .nav-link::after {
 
 @media (min-width: 992px) {
   .title-head {
-    font-size: 5vw;
+    font-size: 4.6vw;
     line-height: 117%;
     margin: 0;
   }
