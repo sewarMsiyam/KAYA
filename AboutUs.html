@@ -20,8 +20,8 @@
 
 <body>
     <header class="d-flex align-items-center sticky-top h-navbar  bg-light-primary ">
-        <div class="container-fluid ">
-            <nav class="navbar navbar-expand-lg col-12 col-xxl-10 mx-auto  ">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg ">
                 <a class="navbar-brand me-lg-5" href="index.html"><img src="assets/images/logo.png"
                         class="img-fluid"></a>
                 <div class="d-flex">
@@ -134,9 +134,9 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid py-xl-5 my-xl-5">
-            <div class="row align-items-center col-12 col-xxl-10 mx-auto mb-5">
-                <div class="col-12 col-lg-6  px-0 px-lg-4 AboutUs-text" data-aos="zoom-in-right" data-aos-easing="linear">
+        <div class="container py-xl-5 my-xl-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-11 col-lg-6  mx-auto px-0 px-lg-4 AboutUs-text" data-aos="zoom-in-right"   data-aos-mirror="true"  data-aos-easing="linear">
                     <h4>Make your look more perfect!</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -145,17 +145,18 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. </p>
                 </div>
-                <div class="col-12 col-lg-6 text-center text-lg-end" data-aos="zoom-in-left" data-aos-easing="linear">
+                <div class="col-11 mx-auto col-lg-6 text-center text-lg-end" data-aos="zoom-in-left" data-aos-mirror="true"  data-aos-easing="linear">
                     <div class="About-container">
                         <img src="assets/images/sec1_AboutU.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="container-fluid">
             <div class="row mb-5 mt-3">
                 <div class="sec2-bg-AboutUs p-0">
                     <div class="d-flex align-items-center h-100 w-100 py-5 bg-img-container p-0">
-                        <div class="container-fluid col-12 col-xxl-10">
+                        <div class="container">
                             <div class="row justify-content-between text-white text-center">
                                 <div class="col-12 col-sm-6 col-xl-3">
                                     <h4 id="counter1">0</h4>
@@ -169,7 +170,7 @@
                                     <h4 id="counter3">0</h4>
                                     <p>HAPPY CUSTOMERS</p>
                                 </div>
-                                <div class="col-12 col-md-6 col-xl-3">
+                                <div class="col-12 col-sm-6 col-xl-3">
                                     <h4 id="counter4">0</h4>
                                     <p>FRIENDLY STAFF</p>
                                 </div>
@@ -178,14 +179,16 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row align-items-center col-12 col-xxl-10 mx-auto mb-5">
-                <div class="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                    <div class="About-container left-border" data-aos="zoom-in-left" data-aos-easing="linear">
+        <div class="container py-xl-5 my-xl-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-11 mx-auto col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="About-container left-border" data-aos="zoom-in-left"  data-aos-mirror="true" data-aos-easing="linear">
                         <img src="assets/images/sec3_AboutU.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6  px-0 px-lg-4 AboutUs-text " data-aos="zoom-in-right" data-aos-easing="linear">
+                <div class="col-11 mx-auto col-lg-6  px-0 px-lg-4 AboutUs-text " data-aos="zoom-in-right"  data-aos-mirror="true" data-aos-easing="linear">
                     <h4>Make your look more perfect!</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -199,11 +202,9 @@
     </section>
 
 
-
-    <footer>
-        <div class="container-fluid">
-            <div
-                class="d-flex flex-column flex-lg-row justify-content-between col-12 col-xxl-10 mx-auto text-center text-lg-start">
+     <footer>
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between text-center text-lg-start">
                 <hr class="bg-white text-white mb-4 mb-lg-5">
                 <div class="col-lg-3">
                     <a href="index.html">
@@ -287,7 +288,7 @@
                     </form>
                 </div>
             </div>
-            <div class="row col-12 col-xxl-10 mx-auto mt-4 mt-lg-5">
+            <div class="row mx-auto mt-4 mt-lg-5">
                 <div class="hstack align-items-center gap-3 mb-3 flex-column flex-lg-row text-center">
                     <div>
                         <p class="m-0 fs-14px">Copyright &copy; 2023 Kayacreams. All Right Reseved</p>
@@ -314,48 +315,48 @@
     <script src="assets/lib/animate/aso.js"></script>
     <script src="assets/js/index.js"></script>
     <script>
-    const counterElements = [
-      document.getElementById('counter1'),
-      document.getElementById('counter2'),
-      document.getElementById('counter3'),
-      document.getElementById('counter4')
-    ];
+        const counterElements = [
+            document.getElementById('counter1'),
+            document.getElementById('counter2'),
+            document.getElementById('counter3'),
+            document.getElementById('counter4')
+        ];
 
-    const targetNumbers = [5678,255, 1058,  20];
-    const delay = 1; // تأخير بين الأرقام (بالمللي ثانية)
+        const targetNumbers = [5678, 255, 1058, 20];
+        const delay = 1; // تأخير بين الأرقام (بالمللي ثانية)
 
-    function startCounters() {
-      const counters = [];
+        function startCounters() {
+            const counters = [];
 
-      counterElements.forEach((element, index) => {
-        const counter = {
-          element: element,
-          count: 0,
-          target: targetNumbers[index]
-        };
+            counterElements.forEach((element, index) => {
+                const counter = {
+                    element: element,
+                    count: 0,
+                    target: targetNumbers[index]
+                };
 
-        counters.push(counter);
-      });
+                counters.push(counter);
+            });
 
-      const intervalId = setInterval(() => {
-        let allCountersFinished = true;
+            const intervalId = setInterval(() => {
+                let allCountersFinished = true;
 
-        counters.forEach(counter => {
-          if (counter.count < counter.target) {
-            counter.count++;
-            counter.element.textContent = counter.count;
-            allCountersFinished = false;
-          }
-        });
+                counters.forEach(counter => {
+                    if (counter.count < counter.target) {
+                        counter.count++;
+                        counter.element.textContent = counter.count;
+                        allCountersFinished = false;
+                    }
+                });
 
-        if (allCountersFinished) {
-          clearInterval(intervalId);
+                if (allCountersFinished) {
+                    clearInterval(intervalId);
+                }
+            }, delay);
         }
-      }, delay);
-    }
 
-    startCounters();
-  </script>
+        startCounters();
+    </script>
 </body>
 
 </html>

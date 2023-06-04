@@ -49,6 +49,15 @@ html {
   background-color: var(--primary);
 }
 
+@media (min-width: 1920px) {
+  .w-h-svg {
+    display: none !important;
+  }
+
+  .rectangle {
+    display: none !important;
+  }
+}
 
 /******************* header ************************/
 header nav.navbar .navbar-nav .nav-item .nav-link {
@@ -374,9 +383,6 @@ header .nav-item:hover .nav-link::after {
 }
 
 @media (min-width: 1800px) {
-  .img-sec-head {
-    height: 590px;
-  }
 
   .w-h-svg {
     width: 591px;
@@ -571,7 +577,7 @@ header .nav-item:hover .nav-link::after {
 
 @media (min-width: 992px) {
   .TopProducts .swiper .swiper-slide .card .card-img-top {
-    height: 300px;
+    height: 250px;
   }
 
   .TopProducts .w-TopProducts {
@@ -596,8 +602,8 @@ header .nav-item:hover .nav-link::after {
   border: 1px solid rgba(144, 144, 144, 0.5);
 }
 
-.quantity-product .minus-btn.active,
 .quantity-product .plus-btn.active,
+.quantity-product .minus-btn.active,
 .quantity-product :not(.btn-check)+.btn:active {
   border-color: transparent;
   background-color: transparent !important;
@@ -860,13 +866,13 @@ input::placeholder {
 
 .bg-img-container .container h1 {
   font-weight: 600;
-  font-size: 8vw;
+  font-size: 30px;
   color: #FEFCFB;
 }
 
 .bg-img-container .container .breadcrumb .breadcrumb-item,
 .bg-img-container .container .breadcrumb .breadcrumb-item a {
-  font-size: 3vw;
+  font-size: 18px;
   color: #FEFCFB;
   text-decoration: none;
 }
@@ -987,12 +993,12 @@ input::placeholder {
   }
 
   .bg-img-container .container h1 {
-    font-size: 4.3vw;
+    font-size: 60px;
   }
 
   .bg-img-container .container .breadcrumb .breadcrumb-item,
   .bg-img-container .container .breadcrumb .breadcrumb-item a {
-    font-size: 1.5vw;
+    font-size: 25px;
   }
 
   .Search-100 {
@@ -1045,11 +1051,11 @@ input::placeholder {
 
   .Support .breadcrumb-item a,
   .Support .breadcrumb-item {
-    font-size: 0.99vw;
+    font-size: 16px;
   }
 
   .Support p {
-    font-size: 0.9375vw;
+    font-size: 16px;
   }
 }
 
@@ -1158,11 +1164,7 @@ input::placeholder {
 }
 
 
-@media (min-width: 650px) {
-  .About-container img {
-    height: 52vw;
-  }
-}
+
 
 @media (min-width: 992px) {
   .About-container::after {
@@ -1174,7 +1176,8 @@ input::placeholder {
   }
 
   .About-container img {
-    height: 25vw;
+    height: 490px;
+    width: 580px !important;
   }
 
   .bg-AboutUs {
@@ -1182,23 +1185,23 @@ input::placeholder {
   }
 
   .AboutUs-text h4 {
-    font-size: 3.6979166666666665vw;
+    font-size: 59px;
     margin-bottom: 15px;
     margin-top: 0;
   }
 
   .AboutUs-text p {
-    font-size: 1.25vw;
-    line-height: 2.0833333333333335vw;
+    font-size: 20px;
+
   }
 
   .sec2-bg-AboutUs h4 {
-    font-size: 5vw;
+    font-size: 96px;
     line-height: 8vw;
   }
 
   .sec2-bg-AboutUs p {
-    font-size: 1.6666666666666667vw;
+    font-size: 32px;
   }
 
 }
@@ -1213,7 +1216,7 @@ input::placeholder {
 
 .tabs .tabs-content .tabs-menu h4 {
   font-weight: 500;
-  font-size: 28px !important;
+  font-size: 23px !important;
   color: #333333;
 }
 
@@ -1290,7 +1293,7 @@ input::placeholder {
 @media (min-width: 992px) {
   .tabs .tabs-content .tabs-menu .tablinks {
     line-height: 29px;
-    font-size: 1.1458333333333333vw;
+    font-size: 18px;
     padding: 15px 0;
   }
 
@@ -1310,7 +1313,7 @@ input::placeholder {
   }
 
   .My_Orders .nav .nav-link {
-    font-size: 1.1vw;
+    font-size: 18px;
   }
 }
 
@@ -1437,7 +1440,7 @@ input::placeholder {
 
 @media (min-width: 992px) {
   .tab-content .tab-pane .table-responsive .table>:not(caption)>*>* {
-    padding: 13px 30px;
+    padding: 13px 15px;
     font-size: 16px;
   }
 
@@ -1454,8 +1457,8 @@ input::placeholder {
   }
 
   .tab-content .tab-pane .table-responsive .table td .btn-outline-primary {
-    width: 8vw;
-    font-size: 16px;
+    width: 145px;
+    font-size: 14px;
   }
 }
 
@@ -1571,10 +1574,10 @@ input::placeholder {
 
 @media (min-width: 992px) {
   .Faq-acco .accordion-button {
-    height: 4.6875vw;
+    height: 85px;
     background: #F7F3ED;
     font-weight: 700;
-    font-size: 1.1vw;
+    font-size: 18px;
     color: #615E5B;
   }
 
@@ -1583,7 +1586,7 @@ input::placeholder {
   }
 
   .Faq-acco .accordion-body {
-    font-size: 0.9375vw;
+    font-size: 16px;
   }
 }
 
@@ -1717,13 +1720,13 @@ input::placeholder {
 
 @media (min-width: 992px) {
   .Product-img .tab-content img {
-    height: 27vw !important;
+    height: 568px !important;
     width: 93% !important;
   }
 
   .Product-img .more-imgs-prodect img {
-    width: 7.894vw !important;
-    height: 7.894vw !important;
+    width: 150px !important;
+    height: 150px !important;
     padding: 4px 6px;
   }
 
@@ -1734,30 +1737,20 @@ input::placeholder {
 
   .Product-Details .p-name,
   .Product-Details .p-price {
-    font-size: 2.1875vw;
-  }
-
-  .p-Review {
-    font-size: 0.703125vw;
+    font-size: 35px;
   }
 
   .Product-Details .p-disc,
   .p-like {
-    font-size: 1vw;
-  }
-
-  .p-quantity button,
-  .p-quantity input {
-    width: 2.34375vw !important;
-    height: 2.34375vw;
+    font-size: 16px;
   }
 
   #prodect-Details .nav-item .nav-link {
-    font-size: 1.1vw;
+    font-size: 22px;
   }
 
   #prodect-DetailsContent p {
-    font-size: 1.1vw;
+    font-size: 19px;
   }
 
   .w-lg-75 {
@@ -1950,18 +1943,18 @@ input::placeholder {
 
 @media (min-width: 992px) {
   .wizard .nav-tabs .nav-item .nav-link .num {
-    width: 2.9167vw;
-    height: 2.9167vw;
-    font-size: 1.2vw;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 
   .wizard .nav-tabs .nav-item .nav-link .tit {
-    font-size: 1.2vw;
+    font-size: 22px;
     padding: 8px;
   }
 
   .coupon {
-    font-size: 1.2vw;
+    font-size: 18px;
   }
 
   .Shopping-cart span {
@@ -1977,16 +1970,16 @@ input::placeholder {
   }
 
   .font_sizing {
-    font-size: 1.2vw;
+    font-size: 22px;
   }
 
   .Checkout-Complete .title-sec {
-    font-size: 4vw;
+    font-size: 60px;
     line-height: 112px;
   }
 
   .title-cart {
-    font-size: 2.5vw;
+    font-size: 40px;
   }
 
   .Checkout-Complete .btn-primary {
@@ -2015,7 +2008,8 @@ input::placeholder {
   background: rgba(167, 131, 100, 0.5);
   padding: 16px 14px;
 }
-.contact .icon:hover{
+
+.contact .icon:hover {
   background: var(--primary);
 }
 
@@ -2032,14 +2026,6 @@ input::placeholder {
 }
 
 @media (min-width: 992px) {
-  .tit-Contact {
-    font-size: 2.2vw;
-    line-height: 53px;
-  }
-
-  .suptit-Contact {
-    font-size: 1vw;
-  }
 
   .contact .icon {
     padding: 20px 18px;
@@ -2047,18 +2033,14 @@ input::placeholder {
 
   .contact h4 {
     font-weight: 700;
-    font-size: 1.1vw;
+    font-size: 20px;
     color: #615E5B;
 
   }
 
-  .contact a {
-    font-size: 1vw;
-    color: #615E5B;
-  }
 
   form.Contact-us .form-label {
-    font-size: 1.02vw;
+    font-size: 18px;
   }
 
 }
@@ -2089,7 +2071,7 @@ input::placeholder {
   color: #424241;
 }
 
-.Blogs-items  .card-text {
+.Blogs-items .card-text {
   font-weight: 400;
   font-size: 13px;
   color: #615E5B;
@@ -2107,7 +2089,7 @@ input::placeholder {
   font-size: 18px;
 }
 
-.card .DateBox {
+.DateBox {
   background: rgba(0, 0, 0, 0.6);
   width: 60px;
   height: 60px;
@@ -2143,7 +2125,8 @@ input::placeholder {
   border: 1px solid var(--primary);
   transform: all 0.2s;
 }
-.Share-social-media a{
+
+.Share-social-media a {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -2157,32 +2140,37 @@ input::placeholder {
   transform: all 0.2s;
   text-decoration: none;
 }
+
+.Blogs-items .link-card:hover {
+  color: var(--primary);
+}
+
 @media (min-width: 992px) {
   .bg-Blogs {
     height: 58vh;
   }
 
   .Blogs-items .card-img-top {
-    height: 35.10vw;
+    height: 550px;
   }
 
   .Blogs-items .card-title {
-    font-size: 2.5vw;
+    font-size: 38px;
   }
 
   .Blogs-items .card-text {
-    font-size: 1.25vw;
+    font-size: 18px;
   }
 
   .Blogs-items .link-card {
-    font-size: 1.35vw;
+    font-size: 18px;
   }
 
   .Blogs-items .link-shop {
-    font-size: 1.56vw;
+    font-size: 18px;
   }
 
-  .card .DateBox {
+  .DateBox {
     width: 80px;
     height: 80px;
     font-size: 18px;
@@ -2193,9 +2181,3 @@ input::placeholder {
     line-height: 29px;
   }
 }
-
-
-
-
-
-
