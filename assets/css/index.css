@@ -23,11 +23,6 @@ html {
   background-color: var(--bg_body);
   color: var(--text-black);
 }
-@media (min-width: 1993px) {
-  .container-fluid {
-    max-width: 1993px;
-  }
-}
 
 .bg-body {
   background-color: var(--bg_body) !important;
@@ -99,7 +94,6 @@ header nav.navbar .navbar-nav .nav-item .btn-primary,
   font-size: 18px;
 }
 
-
 .h-navbar {
   height: 70px;
   background-color: var(--bg_body);
@@ -111,14 +105,6 @@ header nav.navbar .navbar-nav .nav-item .btn-primary,
 }
 
 @media (min-width: 992px) {
-  header nav.navbar .navbar-nav .nav-item .btn-primary {
-    font-size: 1vw;
-  }
-
-  header nav.navbar .navbar-nav .nav-item .nav-link {
-    font-size: 1vw;
-  }
-
   .h-navbar {
     height: 110px;
   }
@@ -347,7 +333,7 @@ header .nav-item:hover .nav-link::after {
 
 @media (min-width: 992px) {
   .title-head {
-    font-size: 4.6vw;
+    font-size: 67px;
     line-height: 117%;
     margin: 0;
   }
@@ -365,7 +351,7 @@ header .nav-item:hover .nav-link::after {
   }
 
   .sup-title-head {
-    font-size: 1.2vw;
+    font-size: 18px;
     line-height: 167%;
   }
 
@@ -449,11 +435,11 @@ header .nav-item:hover .nav-link::after {
   }
 
   .title-sec {
-    font-size: 3.2vw;
+    font-size: 50px;
   }
 
   .sup-title {
-    font-size: 0.9375vw;
+    font-size: 16px;
   }
 
   .why-choosing-Us {
@@ -461,11 +447,11 @@ header .nav-item:hover .nav-link::after {
   }
 
   .why-choosing-Us h4 {
-    font-size: 1.25vw;
+    font-size: 24px;
   }
 
   .why-choosing-Us p {
-    font-size: 0.9375vw;
+    font-size: 16px;
   }
 }
 
@@ -585,7 +571,7 @@ header .nav-item:hover .nav-link::after {
 
 @media (min-width: 992px) {
   .TopProducts .swiper .swiper-slide .card .card-img-top {
-    height: 16.145833333333332vw;
+    height: 300px;
   }
 
   .TopProducts .w-TopProducts {
@@ -593,14 +579,10 @@ header .nav-item:hover .nav-link::after {
   }
 
   .TopProducts .nav-pills .nav-item .nav-link {
-    font-size: 1.25vw;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   }
 
-  .TopProducts .swiper .swiper-slide .card .card-title,
-  .TopProducts .swiper .swiper-slide .card .card-text {
-    font-size: 1.25vw;
-  }
+
 }
 
 .TopProducts .quantity-product input {
@@ -772,11 +754,11 @@ header .nav-item:hover .nav-link::after {
 @media (min-width: 992px) {
   .NewCollection .margin-negitve .img-fluid {
     width: 92%;
-    height: 26.041666666666668vw;
+    height: 400px;
   }
 
   .NewCollection .margin-negitve h4 {
-    font-size: 1.5vw;
+    font-size: 23px;
     color: #FEFCFB;
   }
 }
@@ -831,13 +813,12 @@ footer .vr {
   }
 
   footer h4 {
-    font-size: 1.3vw;
     margin-top: 0;
   }
 
   footer p,
   footer .items-list a {
-    font-size: 0.9vw;
+    font-size: 18px;
     margin-top: 5px;
   }
 
